@@ -1,0 +1,47 @@
+.root {
+    -fx-background-image: url("pattern.png");
+    -fx-background-size: cover; /* Adjust as needed: cover, contain, or specific dimensions */
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+
+
+.label{
+    -fx-font-size: 20px;
+    -fx-font-family: "Comic Sans MS";
+}
+
+#tf{
+    -fx-background-radius: 5; /* Ajusta el valor según el grado de redondeo deseado */
+    -fx-border-radius: 5; /* Ajusta el valor según el grado de redondeo deseado */
+    -fx-padding: 5;
+    -fx-font-family: "Comic Sans MS";
+}
+
+#tf2{
+    -fx-background-radius: 5; /* Ajusta el valor según el grado de redondeo deseado */
+    -fx-border-radius: 5; /* Ajusta el valor según el grado de redondeo deseado */
+    -fx-padding: 5;
+    -fx-font-family: "Comic Sans MS";
+}
+
+.button{
+    -fx-border-radius: 20px;
+    -fx-border-width: 4px;
+    -fx-border-color: #113E43;
+    -fx-background-radius: 20;
+    -fx-background-color: #85B3EA;
+    -fx-font-family: "Comic Sans MS";
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 15px;
+}
+
+#inicioSesionTitle{
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-border-style: solid;
+    -fx-border-width: 0 0 2 0; /* top right bottom left */
+    -fx-border-color: #333; /* Color del borde */
+
+}
