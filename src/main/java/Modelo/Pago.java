@@ -1,6 +1,7 @@
 package Modelo;
 
 import Enum.FormaPago;
+import ManejoArchivos.ManejadorArchivos;
 
 public class Pago {
     private int idPago;
@@ -9,16 +10,16 @@ public class Pago {
     private byte descuento;
     private FormaPago formaPago;
     private double totalPagar;
+    private static int counter = 1;
 
-    public Pago(int idPago, String codigoReserva, double totalReserva, byte descuento, FormaPago formaPago, double totalPagar) {
-        this.idPago = idPago;
+    public Pago(String codigoReserva, double totalReserva, byte descuento, FormaPago formaPago) {
+        this.idPago = counter++;
         this.codigoReserva = codigoReserva;
         this.totalReserva = totalReserva;
         this.descuento = descuento;
         this.formaPago = formaPago;
-        this.totalPagar = totalPagar;
+        this.totalPagar = totalReserva * (1-(descuento/100));
     }
-
 
     public int getIdPago() {
         return idPago;
@@ -66,5 +67,14 @@ public class Pago {
 
     public void setTotalPagar(double totalPagar) {
         this.totalPagar = totalPagar;
+    }
+    
+    /**
+    * Método para escribir archivos de pagos
+    */
+    public void RegistrarPago(){
+        String header = "idPago,codigoReserva,totalReserva,descuento,formaPago,totalPagar";
+        String linea = String.valueOf(idPago)+","+codigoReserva+","+String.valueOf(totalReserva)+","+String.valueOf(descuento)+","+formaPago.toString()+","+String.valueOf(totalPagar);
+        ManejadorArchivos.EscribirArchivo("pagos.txt", header, linea);
     }
 }

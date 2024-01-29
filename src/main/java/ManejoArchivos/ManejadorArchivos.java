@@ -39,6 +39,7 @@ public class ManejadorArchivos {
 
             // Lectura del fichero
             String linea;
+            br.readLine();
             while ((linea = br.readLine()) != null) {
 //                System.out.println(linea);
                 lineas.add(linea);
@@ -68,16 +69,26 @@ public class ManejadorArchivos {
      * @param nombreArchivo el nombre del archivo a Escribir
      * @param linea La linea que se desea escribir
      */
-    public static void EscribirArchivo(String nombreArchivo, String linea) {
+    public static void EscribirArchivo(String nombreArchivo, String linea, String linea1) {
 
         FileWriter fichero = null;
         BufferedWriter bw = null;
         PrintWriter pw = null;
+        File archivo = new File(nombreArchivo);
+        //Se verifica primero que un archivo con ese nombre exista o no,
+        //dependiendo de eso, escribe en el archivo o crea uno nuevo y luego escribe.
         try {
             fichero = new FileWriter(nombreArchivo,true);
             bw = new BufferedWriter(fichero);
-            bw.write(linea+"\n");
-
+            if (archivo.exists() && !archivo.isDirectory()) {
+                bw.newLine();
+                bw.write(linea);
+            } else {
+                archivo.createNewFile();
+                bw.write(linea1);
+                bw.newLine();
+                bw.write(linea);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

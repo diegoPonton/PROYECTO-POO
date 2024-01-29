@@ -1,6 +1,11 @@
 package Modelo;
 
-public class Reserva {
+import static Enum.TipoTarifa.*;
+import Enum.FormaPago;
+import ManejoArchivos.ManejadorArchivos;
+import java.io.Serializable;
+
+public class Reserva implements Serializable{
     private Cliente cliente;
     private String ciudadOrigen;
     private String ciudadDestino;
@@ -26,6 +31,10 @@ public class Reserva {
         this.tarifaRegreso = tarifaRegreso;
         this.codigoReserva = codigoReserva;
     }
+    
+    public String getCodigoReserva(){
+        return codigoReserva;
+    }
 
     @Override
     public String toString() {
@@ -43,7 +52,56 @@ public class Reserva {
                 ", codigoReserva='" + codigoReserva + '\'' +
                 '}';
     }
-
+    
+    public Pago generarTransaccion(byte descuento, FormaPago formaPago){
+        double precioIda = 0;
+        double precioRegreso = 0;
+        byte multIda = 0;
+        byte multRegreso = 0;
+        for(Vuelo v: Principal.Vuelos){
+            if(v.getNumeroVuelo().equals(numeroVueloIda)){
+                precioIda = v.getPrecio();
+            }
+            if(v.getNumeroVuelo().equals(numeroVueloRegreso)){
+                precioRegreso = v.getPrecio();
+            }
+        }
+        switch(tarifaIda.getTipo()){
+            case S:
+                multIda = 1;
+                break;
+            case M:
+                multIda = 15;
+                break;
+            case L:
+                multIda = 30;
+                break;
+        }
+        switch(tarifaIda.getTipo()){
+            case S:
+                multIda = 1;
+                break;
+            case M:
+                multIda = 15;
+                break;
+            case L:
+                multIda = 30;
+                break;
+        }
+        double total = (precioIda * multIda)+(precioRegreso * multRegreso);
+        Pago pago = new Pago(codigoReserva, total, descuento, formaPago);
+        return pago;
+    }
 
     // FALTA LA FUNCION PAGAR RESERVA
+    
+    /**
+    * Método para escribir archivos de reservas
+    */
+    public void RegistrarReserva(){
+        String header = "CodigoReserva,cedulaCliente,ciudadOrigen,ciudadDestino,fechaSalida,fechaRegreso,numPasajeros,numVueloIda,nomVueloRegreso,tipoTaraifaIda,tipoTarifaRegreso";
+        String linea = codigoReserva+","+cliente.getCedula()+","+ciudadOrigen+","+ciudadDestino+","+fechaSalida+","+fechaRegresa+","+String.valueOf(numeroPasajeros)+","+String.valueOf(numeroVueloIda)+","+String.valueOf(numeroVueloRegreso)+","+tarifaIda.getTipo()+","+tarifaRegreso.getTipo();
+        ManejadorArchivos.EscribirArchivo("reservas.txt", header, linea);
+    }
+    
 }

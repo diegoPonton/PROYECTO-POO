@@ -1,7 +1,6 @@
 package Modelo;
 
 import ManejoArchivos.ManejadorArchivos;
-import static ManejoArchivos.ManejadorArchivos.LeerArchivo;
 import java.util.ArrayList;
 
 public class Cliente {
@@ -72,7 +71,7 @@ public class Cliente {
     }
 
     /**
-     * Metodo que permite obtener los datos del archivo usuario
+     * Metodo que permite obtener los datos del archivo cliente
      * @param ruta Path donde se encuentran los datos
      * @return un ArrayList con los objetos usuarios
      */
