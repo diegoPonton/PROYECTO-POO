@@ -1,0 +1,8 @@
+cedula,nombre,apellido,usuario,contraseña
+0925766305,Fabricio,Chang,fchang,12345
+0987654321,Diegon,Ponton,dponton,qwerty
+1234567890,Daniel,Amaya,damaya,13579
+5678901234,Ana,Gomez,agomez,POOGOD
+2345678901,Luis,Fernandez,lfernandez,asdfg
+3456789012,Marina,Rivera,mrivera,zxcvb
+4567890123,Carlos,Martinez,cmartinez,qweasd

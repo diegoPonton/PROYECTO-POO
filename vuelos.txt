@@ -1,0 +1,286 @@
+numero de vuelo,origen,destino,duracion(en horas),hora de salida,hora de llegada,código de avión,precio
+AV0615,Guayaquil,Río de Janeiro,12,02:00,06:00,Airbus A319,520.00
+AV3964,Guayaquil,Río de Janeiro,14,04:30,08:30,Boeing 787,580.50
+AV2488,Guayaquil,Río de Janeiro,16,07:00,11:00,Airbus A320,640.25
+AV1415,Guayaquil,Río de Janeiro,18,09:30,13:30,Boeing 777,700.80
+AV5662,Guayaquil,Río de Janeiro,20,12:00,16:00,Airbus A350,760.00
+AV9731,Quito,Río de Janeiro,14,01:00,05:00,Airbus A320,550.00
+AV3673,Quito,Río de Janeiro,16,03:30,07:30,Boeing 737,610.20
+AV5501,Quito,Río de Janeiro,18,06:00,10:00,Airbus A321,670.90
+AV8903,Quito,Río de Janeiro,20,08:30,12:30,Boeing 787,730.75
+AV0770,Quito,Río de Janeiro,22,11:00,15:00,Airbus A330,790.60
+AV9570,Cuenca,Río de Janeiro,16,02:00,06:00,Boeing 777,680.50
+AV3318,Cuenca,Río de Janeiro,18,04:30,08:30,Airbus A330,740.75
+AV0059,Cuenca,Río de Janeiro,20,07:00,11:00,Boeing 787,800.80
+AV5415,Cuenca,Río de Janeiro,22,09:30,13:30,Airbus A350,860.00
+AV3231,Cuenca,Río de Janeiro,24,12:00,16:00,Boeing 737,920.20
+AV3494,Guayaquil,Toronto,15,00:30,06:30,Airbus A319,680.40
+AV1530,Guayaquil,Toronto,17,03:00,09:00,Airbus A320,720.50
+AV8202,Guayaquil,Toronto,19,05:30,11:30,Boeing 787,760.75
+AV4703,Guayaquil,Toronto,21,08:00,14:00,Boeing 777,810.90
+AV4954,Guayaquil,Toronto,23,10:30,16:30,Airbus A330,860.60
+AV3252,Quito,Toronto,18,01:00,07:00,Boeing 787,720.90
+AV6847,Quito,Toronto,20,03:30,09:30,Airbus A321,760.75
+AV8378,Quito,Toronto,22,06:00,12:00,Boeing 737,810.80
+AV2829,Quito,Toronto,24,08:30,14:30,Airbus A330,860.00
+AV8305,Quito,Toronto,19,11:00,17:00,Boeing 777,910.50
+AV0173,Cuenca,Toronto,17,02:30,08:30,Airbus A320,670.20
+AV0915,Cuenca,Toronto,19,05:00,11:00,Boeing 737,720.60
+AV3802,Cuenca,Toronto,21,07:30,13:30,Boeing 787,770.40
+AV0827,Cuenca,Toronto,23,10:00,16:00,Airbus A330,820.20
+AV1849,Cuenca,Toronto,25,12:30,18:30,Boeing 777,870.30
+AV7042,Guayaquil,Cali,2,06:00,08:00,Airbus A319,130.40
+AV5834,Guayaquil,Cali,3,08:00,11:00,Airbus A320,160.50
+AV3939,Guayaquil,Cali,4,10:00,14:00,Boeing 787,190.75
+AV7340,Guayaquil,Cali,5,12:00,17:00,Boeing 777,220.90
+AV2815,Guayaquil,Cali,6,14:00,20:00,Airbus A330,250.60
+AV1382,Quito,Cali,3,07:00,10:00,Boeing 787,160.90
+AV2314,Quito,Cali,4,09:00,13:00,Airbus A321,190.75
+AV2517,Quito,Cali,5,11:00,16:00,Boeing 737,220.80
+AV1299,Quito,Cali,6,13:00,19:00,Airbus A330,250.00
+AV2347,Quito,Cali,7,15:00,22:00,Boeing 777,280.50
+AV9347,Cuenca,Cali,4,08:00,12:00,Airbus A320,190.20
+AV0188,Cuenca,Cali,5,10:00,15:00,Boeing 737,220.60
+AV9422,Cuenca,Cali,6,12:00,18:00,Boeing 787,250.40
+AV8462,Cuenca,Cali,7,14:00,21:00,Airbus A330,280.20
+AV5651,Cuenca,Cali,8,16:00,23:00,Boeing 777,310.30
+AV1624,Guayaquil,México,3,04:00,07:00,Airbus A319,180.40
+AV1137,Guayaquil,México,4,06:00,10:00,Airbus A320,210.50
+AV6366,Guayaquil,México,5,08:00,13:00,Boeing 787,240.75
+AV6900,Guayaquil,México,6,10:00,16:00,Boeing 777,270.90
+AV8408,Guayaquil,México,7,12:00,19:00,Airbus A330,300.60
+AV9173,Quito,México,4,05:00,09:00,Boeing 787,210.90
+AV9841,Quito,México,5,07:00,12:00,Airbus A321,240.75
+AV9047,Quito,México,6,09:00,15:00,Boeing 737,270.80
+AV9523,Quito,México,7,11:00,18:00,Airbus A330,300.00
+AV1755,Quito,México,8,13:00,21:00,Boeing 777,330.50
+AV7951,Cuenca,México,5,06:00,11:00,Airbus A320,240.20
+AV3536,Cuenca,México,6,08:00,14:00,Boeing 737,270.60
+AV5684,Cuenca,México,7,10:00,17:00,Boeing 787,300.40
+AV9540,Cuenca,México,8,12:00,20:00,Airbus A330,330.20
+AV3608,Cuenca,México,9,14:00,23:00,Boeing 777,360.30
+AV8136,Guayaquil,Lima,2,07:00,09:00,Airbus A319,160.40
+AV5750,Guayaquil,Lima,3,09:00,12:00,Airbus A320,190.50
+AV0684,Guayaquil,Lima,4,11:00,15:00,Boeing 787,220.75
+AV9722,Guayaquil,Lima,5,13:00,18:00,Boeing 777,250.90
+AV0300,Guayaquil,Lima,6,15:00,21:00,Airbus A330,280.60
+AV2634,Quito,Lima,3,08:00,11:00,Boeing 787,190.90
+AV4210,Quito,Lima,4,10:00,14:00,Airbus A321,220.75
+AV2666,Quito,Lima,5,12:00,17:00,Boeing 737,250.80
+AV5487,Quito,Lima,6,14:00,20:00,Airbus A330,280.00
+AV5218,Quito,Lima,7,16:00,23:00,Boeing 777,310.50
+AV1593,Cuenca,Lima,4,09:00,13:00,Airbus A320,220.20
+AV9752,Cuenca,Lima,5,11:00,16:00,Boeing 737,250.60
+AV7798,Cuenca,Lima,6,13:00,19:00,Boeing 787,280.40
+AV3693,Cuenca,Lima,7,15:00,22:00,Airbus A330,310.20
+AV4577,Cuenca,Lima,8,17:00,00:00,Boeing 777,340.30
+AV8419,Guayaquil,Guadalajara,7,08:00,15:00,Airbus A319,320.40
+AV8651,Guayaquil,Guadalajara,8,10:00,18:00,Airbus A320,350.50
+AV9907,Guayaquil,Guadalajara,9,12:00,21:00,Boeing 787,380.75
+AV4439,Guayaquil,Guadalajara,10,14:00,00:00,Boeing 777,410.90
+AV5489,Guayaquil,Guadalajara,11,16:00,03:00,Airbus A330,440.60
+AV8730,Quito,Guadalajara,8,09:00,17:00,Boeing 787,350.90
+AV4375,Quito,Guadalajara,9,11:00,20:00,Airbus A321,380.75
+AV4625,Quito,Guadalajara,10,13:00,23:00,Boeing 737,410.80
+AV5254,Quito,Guadalajara,11,15:00,02:00,Airbus A330,440.00
+AV8833,Quito,Guadalajara,12,17:00,04:00,Boeing 777,470.50
+AV1884,Cuenca,Guadalajara,9,10:00,19:00,Airbus A320,380.20
+AV2550,Cuenca,Guadalajara,10,12:00,22:00,Boeing 737,410.60
+AV2303,Cuenca,Guadalajara,11,14:00,01:00,Boeing 787,440.40
+AV9988,Cuenca,Guadalajara,12,16:00,03:00,Airbus A330,470.20
+AV5710,Cuenca,Guadalajara,13,18:00,04:00,Boeing 777,500.30
+AV1437,Guayaquil,Cairo,15,03:00,08:00,Airbus A319,820.40
+AV2298,Guayaquil,Cairo,16,05:00,11:00,Airbus A320,850.50
+AV6652,Guayaquil,Cairo,17,07:00,14:00,Boeing 787,880.75
+AV6338,Guayaquil,Cairo,18,09:00,17:00,Boeing 777,910.90
+AV0361,Guayaquil,Cairo,19,11:00,20:00,Airbus A330,940.60
+AV3961,Quito,Cairo,16,04:00,10:00,Boeing 787,850.90
+AV9887,Quito,Cairo,17,06:00,13:00,Airbus A321,880.75
+AV6408,Quito,Cairo,18,08:00,16:00,Boeing 737,910.80
+AV7558,Quito,Cairo,19,10:00,19:00,Airbus A330,940.00
+AV6790,Quito,Cairo,20,12:00,22:00,Boeing 777,970.50
+AV8049,Cuenca,Cairo,17,05:00,12:00,Airbus A320,880.20
+AV2027,Cuenca,Cairo,18,07:00,15:00,Boeing 737,910.60
+AV2123,Cuenca,Cairo,19,09:00,18:00,Boeing 787,940.40
+AV7269,Cuenca,Cairo,20,11:00,21:00,Airbus A330,970.20
+AV3873,Cuenca,Cairo,21,13:00,23:00,Boeing 777,1000.30
+AV0466,Guayaquil,Venecia,14,10:00,20:00,Airbus A319,780.40
+AV8571,Guayaquil,Venecia,15,12:00,23:00,Airbus A320,810.50
+AV7260,Guayaquil,Venecia,16,14:00,02:00,Boeing 787,840.75
+AV7560,Guayaquil,Venecia,17,16:00,05:00,Boeing 777,870.90
+AV5284,Guayaquil,Venecia,18,18:00,08:00,Airbus A330,900.60
+AV5864,Quito,Venecia,15,11:00,21:00,Boeing 787,810.90
+AV1277,Quito,Venecia,16,13:00,00:00,Airbus A321,840.75
+AV2214,Quito,Venecia,17,15:00,03:00,Boeing 737,870.80
+AV2410,Quito,Venecia,18,17:00,05:00,Airbus A330,900.00
+AV5040,Quito,Venecia,19,19:00,07:00,Boeing 777,930.50
+AV3159,Cuenca,Venecia,16,12:00,23:00,Airbus A320,840.20
+AV7318,Cuenca,Venecia,17,14:00,02:00,Boeing 737,870.60
+AV8864,Cuenca,Venecia,18,16:00,05:00,Boeing 787,900.40
+AV0940,Cuenca,Venecia,19,18:00,07:00,Airbus A330,930.20
+AV2991,Cuenca,Venecia,20,20:00,09:00,Boeing 777,960.30
+AV8272,Guayaquil,Roma,12,05:00,12:00,Airbus A319,710.40
+AV0197,Guayaquil,Roma,13,07:00,15:00,Airbus A320,740.50
+AV0555,Guayaquil,Roma,14,09:00,18:00,Boeing 787,770.75
+AV6945,Guayaquil,Roma,15,11:00,21:00,Boeing 777,800.90
+AV8004,Guayaquil,Roma,16,13:00,00:00,Airbus A330,830.60
+AV2169,Quito,Roma,13,06:00,13:00,Boeing 787,740.90
+AV2566,Quito,Roma,14,08:00,16:00,Airbus A321,770.75
+AV8235,Quito,Roma,15,10:00,19:00,Boeing 737,800.80
+AV0478,Quito,Roma,16,12:00,21:00,Airbus A330,830.00
+AV6004,Quito,Roma,17,14:00,23:00,Boeing 777,860.50
+AV3246,Cuenca,Roma,14,07:00,15:00,Airbus A320,770.20
+AV8054,Cuenca,Roma,15,09:00,18:00,Boeing 737,800.60
+AV4013,Cuenca,Roma,16,11:00,21:00,Boeing 787,830.40
+AV6759,Cuenca,Roma,17,13:00,00:00,Airbus A330,860.20
+AV9100,Cuenca,Roma,18,15:00,03:00,Boeing 777,890.30
+AV4335,Guayaquil,Barcelona,20,03:30,05:25,Airbus A319,653.06
+AV7562,Guayaquil,Barcelona,18,05:45,07:45,Boeing 787,700.50
+AV6535,Guayaquil,Barcelona,22,08:00,10:00,Airbus A320,780.25
+AV0629,Guayaquil,Barcelona,19,10:15,12:15,Boeing 777,850.80
+AV8421,Guayaquil,Barcelona,21,12:30,14:30,Airbus A350,920.00
+AV4432,Quito,Barcelona,16,04:00,07:00,Airbus A320,600.00
+AV8784,Quito,Barcelona,20,06:30,09:30,Boeing 737,670.20
+AV8741,Quito,Barcelona,17,09:00,12:00,Airbus A321,740.90
+AV3401,Quito,Barcelona,21,12:00,15:00,Boeing 787,820.75
+AV3395,Quito,Barcelona,19,15:30,18:30,Airbus A330,890.60
+AV7051,Cuenca,Barcelona,23,07:00,10:00,Boeing 777,900.50
+AV9079,Cuenca,Barcelona,18,10:30,13:30,Airbus A330,780.75
+AV5196,Cuenca,Barcelona,20,14:00,17:00,Boeing 787,850.80
+AV3594,Cuenca,Barcelona,22,17:30,20:30,Airbus A350,920.00
+AV9726,Cuenca,Barcelona,21,21:00,00:00,Boeing 737,950.20
+AV1379,Guayaquil,Valencia,15,02:00,10:00,Airbus A319,820.40
+AV2374,Guayaquil,Valencia,16,04:00,12:00,Airbus A320,850.50
+AV0959,Guayaquil,Valencia,17,06:00,14:00,Boeing 787,880.75
+AV2481,Guayaquil,Valencia,18,08:00,16:00,Boeing 777,910.90
+AV3095,Guayaquil,Valencia,19,10:00,18:00,Airbus A330,940.60
+AV0294,Quito,Valencia,16,03:00,11:00,Boeing 787,850.90
+AV3380,Quito,Valencia,17,05:00,13:00,Airbus A321,880.75
+AV2996,Quito,Valencia,18,07:00,15:00,Boeing 737,910.80
+AV6301,Quito,Valencia,19,09:00,17:00,Airbus A330,940.00
+AV7124,Quito,Valencia,20,11:00,19:00,Boeing 777,970.50
+AV7526,Cuenca,Valencia,17,04:00,12:00,Airbus A320,880.20
+AV6924,Cuenca,Valencia,18,06:00,14:00,Boeing 737,910.60
+AV9384,Cuenca,Valencia,19,08:00,16:00,Boeing 787,940.40
+AV3911,Cuenca,Valencia,20,10:00,18:00,Airbus A330,970.20
+AV9059,Cuenca,Valencia,21,12:00,20:00,Boeing 777,1000.30
+AV1759,Guayaquil,Istanbul,15,05:00,12:00,Airbus A319,780.40
+AV1959,Guayaquil,Istanbul,16,07:00,15:00,Airbus A320,810.50
+AV9183,Guayaquil,Istanbul,17,09:00,18:00,Boeing 787,840.75
+AV7705,Guayaquil,Istanbul,18,11:00,21:00,Boeing 777,870.90
+AV1078,Guayaquil,Istanbul,19,13:00,00:00,Airbus A330,900.60
+AV6664,Quito,Istanbul,16,06:00,13:00,Boeing 787,810.90
+AV3595,Quito,Istanbul,17,08:00,16:00,Airbus A321,840.75
+AV7336,Quito,Istanbul,18,10:00,19:00,Boeing 737,870.80
+AV9662,Quito,Istanbul,19,12:00,21:00,Airbus A330,900.00
+AV7699,Quito,Istanbul,20,14:00,23:00,Boeing 777,930.50
+AV0703,Cuenca,Istanbul,17,07:00,15:00,Airbus A320,840.20
+AV5510,Cuenca,Istanbul,18,09:00,18:00,Boeing 737,870.60
+AV7527,Cuenca,Istanbul,19,11:00,21:00,Boeing 787,900.40
+AV1261,Cuenca,Istanbul,20,13:00,00:00,Airbus A330,930.20
+AV1059,Cuenca,Istanbul,21,15:00,03:00,Boeing 777,960.30
+AV7827,Guayaquil,Buenos Aires,15,01:00,08:00,Airbus A319,710.40
+AV5499,Guayaquil,Buenos Aires,16,03:00,11:00,Airbus A320,740.50
+AV5855,Guayaquil,Buenos Aires,17,05:00,14:00,Boeing 787,770.75
+AV0907,Guayaquil,Buenos Aires,18,07:00,16:00,Boeing 777,800.90
+AV7764,Guayaquil,Buenos Aires,19,09:00,18:00,Airbus A330,830.60
+AV6209,Quito,Buenos Aires,16,04:00,12:00,Boeing 787,740.90
+AV4476,Quito,Buenos Aires,17,06:00,15:00,Airbus A321,770.75
+AV0520,Quito,Buenos Aires,18,08:00,17:00,Boeing 737,800.80
+AV2357,Quito,Buenos Aires,19,10:00,19:00,Airbus A330,830.00
+AV8162,Quito,Buenos Aires,20,12:00,21:00,Boeing 777,860.50
+AV5716,Cuenca,Buenos Aires,17,05:00,14:00,Airbus A320,770.20
+AV9023,Cuenca,Buenos Aires,18,07:00,16:00,Boeing 737,800.60
+AV2716,Cuenca,Buenos Aires,19,09:00,18:00,Boeing 787,830.40
+AV0388,Cuenca,Buenos Aires,20,11:00,21:00,Airbus A330,860.20
+AV5947,Cuenca,Buenos Aires,21,13:00,00:00,Boeing 777,890.30
+AV9159,Guayaquil,Rosario,22,07:00,09:00,Airbus A319,820.40
+AV0640,Guayaquil,Rosario,23,09:00,12:00,Airbus A320,850.50
+AV6316,Guayaquil,Rosario,24,11:00,15:00,Boeing 787,880.75
+AV5572,Guayaquil,Rosario,25,13:00,18:00,Boeing 777,910.90
+AV4503,Guayaquil,Rosario,26,15:00,21:00,Airbus A330,940.60
+AV5301,Quito,Rosario,23,08:00,11:00,Boeing 787,850.90
+AV6456,Quito,Rosario,24,10:00,14:00,Airbus A321,880.75
+AV9656,Quito,Rosario,25,12:00,17:00,Boeing 737,910.80
+AV5675,Quito,Rosario,26,14:00,20:00,Airbus A330,940.00
+AV8544,Quito,Rosario,27,16:00,23:00,Boeing 777,970.50
+AV0497,Cuenca,Rosario,24,09:00,13:00,Airbus A320,880.20
+AV0525,Cuenca,Rosario,25,11:00,16:00,Boeing 737,910.60
+AV1550,Cuenca,Rosario,26,13:00,19:00,Boeing 787,940.40
+AV6852,Cuenca,Rosario,27,15:00,22:00,Airbus A330,970.20
+AV0820,Cuenca,Rosario,28,17:00,00:00,Boeing 777,1000.30
+AV4526,Guayaquil,Beijing,15,04:00,22:00,Airbus A319,1120.40
+AV0803,Guayaquil,Beijing,16,06:00,01:00,Airbus A320,1150.50
+AV7972,Guayaquil,Beijing,17,08:00,04:00,Boeing 787,1180.75
+AV4801,Guayaquil,Beijing,18,10:00,07:00,Boeing 777,1210.90
+AV7720,Guayaquil,Beijing,19,12:00,10:00,Airbus A330,1240.60
+AV7898,Quito,Beijing,16,05:00,23:00,Boeing 787,1150.90
+AV7517,Quito,Beijing,17,07:00,02:00,Airbus A321,1180.75
+AV7191,Quito,Beijing,18,09:00,05:00,Boeing 737,1210.80
+AV9403,Quito,Beijing,19,11:00,08:00,Airbus A330,1240.00
+AV9487,Quito,Beijing,20,13:00,11:00,Boeing 777,1270.50
+AV2275,Cuenca,Beijing,17,06:00,00:00,Airbus A320,1180.20
+AV0376,Cuenca,Beijing,18,08:00,05:00,Boeing 737,1210.60
+AV9725,Cuenca,Beijing,19,10:00,07:00,Boeing 787,1240.40
+AV8969,Cuenca,Beijing,20,12:00,10:00,Airbus A330,1270.20
+AV1323,Cuenca,Beijing,21,14:00,12:00,Boeing 777,1300.30
+AV5203,Guayaquil,Paris,25,06:00,12:00,Airbus A319,980.40
+AV1860,Guayaquil,Paris,26,08:00,14:00,Airbus A320,1010.50
+AV5745,Guayaquil,Paris,27,10:00,16:00,Boeing 787,1040.75
+AV6587,Guayaquil,Paris,28,12:00,18:00,Boeing 777,1070.90
+AV0383,Guayaquil,Paris,29,14:00,20:00,Airbus A330,1100.60
+AV3897,Quito,Paris,26,07:00,13:00,Boeing 787,1010.90
+AV6515,Quito,Paris,27,09:00,15:00,Airbus A321,1040.75
+AV0252,Quito,Paris,28,11:00,17:00,Boeing 737,1070.80
+AV9980,Quito,Paris,29,13:00,19:00,Airbus A330,1100.00
+AV5374,Quito,Paris,30,15:00,21:00,Boeing 777,1130.50
+AV0812,Cuenca,Paris,27,08:00,14:00,Airbus A320,1040.20
+AV5092,Cuenca,Paris,28,10:00,16:00,Boeing 737,1070.60
+AV0874,Cuenca,Paris,29,12:00,18:00,Boeing 787,1100.40
+AV0621,Cuenca,Paris,30,14:00,20:00,Airbus A330,1130.20
+AV6728,Cuenca,Paris,31,16:00,22:00,Boeing 777,1160.30
+AV6474,Guayaquil,Miami,15,08:00,12:00,Airbus A319,520.40
+AV8838,Guayaquil,Miami,16,10:00,14:00,Airbus A320,550.50
+AV1972,Guayaquil,Miami,17,12:00,16:00,Boeing 787,580.75
+AV1130,Guayaquil,Miami,18,14:00,18:00,Boeing 777,610.90
+AV8479,Guayaquil,Miami,19,16:00,20:00,Airbus A330,640.60
+AV9798,Quito,Miami,16,09:00,13:00,Boeing 787,550.90
+AV5883,Quito,Miami,17,11:00,15:00,Airbus A321,580.75
+AV0442,Quito,Miami,18,13:00,17:00,Boeing 737,610.80
+AV5050,Quito,Miami,19,15:00,19:00,Airbus A330,640.00
+AV2413,Quito,Miami,20,17:00,21:00,Boeing 777,670.50
+AV7155,Cuenca,Miami,17,10:00,14:00,Airbus A320,580.20
+AV1778,Cuenca,Miami,18,12:00,16:00,Boeing 737,610.60
+AV4547,Cuenca,Miami,19,14:00,18:00,Boeing 787,640.40
+AV9995,Cuenca,Miami,20,16:00,20:00,Airbus A330,670.20
+AV9610,Cuenca,Miami,21,18:00,22:00,Boeing 777,700.30
+AV1436,Guayaquil,Lagos,20,04:00,12:00,Airbus A319,1140.40
+AV1891,Guayaquil,Lagos,21,06:00,14:00,Airbus A320,1170.50
+AV5490,Guayaquil,Lagos,22,08:00,16:00,Boeing 787,1200.75
+AV6702,Guayaquil,Lagos,23,10:00,18:00,Boeing 777,1230.90
+AV1411,Guayaquil,Lagos,24,12:00,20:00,Airbus A330,1260.60
+AV1848,Quito,Lagos,21,05:00,13:00,Boeing 787,1170.90
+AV4622,Quito,Lagos,22,07:00,15:00,Airbus A321,1200.75
+AV2515,Quito,Lagos,23,09:00,17:00,Boeing 737,1230.80
+AV8828,Quito,Lagos,24,11:00,19:00,Airbus A330,1260.00
+AV8094,Quito,Lagos,25,13:00,21:00,Boeing 777,1290.50
+AV6113,Cuenca,Lagos,22,06:00,14:00,Airbus A320,1200.20
+AV4039,Cuenca,Lagos,23,08:00,16:00,Boeing 737,1230.60
+AV6512,Cuenca,Lagos,24,10:00,18:00,Boeing 787,1260.40
+AV2602,Cuenca,Lagos,25,12:00,20:00,Airbus A330,1290.20
+AV7007,Cuenca,Lagos,26,14:00,22:00,Boeing 777,1320.30
+AV9990,Guayaquil,Melbourne,30,06:00,21:00,Airbus A319,1520.40
+AV5763,Guayaquil,Melbourne,31,08:00,23:00,Airbus A320,1550.50
+AV1758,Guayaquil,Melbourne,32,10:00,01:00,Boeing 787,1580.75
+AV7000,Guayaquil,Melbourne,33,12:00,03:00,Boeing 777,1610.90
+AV6636,Guayaquil,Melbourne,34,14:00,05:00,Airbus A330,1640.60
+AV9303,Quito,Melbourne,31,07:00,22:00,Boeing 787,1550.90
+AV1846,Quito,Melbourne,32,09:00,00:00,Airbus A321,1580.75
+AV8363,Quito,Melbourne,33,11:00,02:00,Boeing 737,1610.80
+AV3002,Quito,Melbourne,34,13:00,04:00,Airbus A330,1640.00
+AV6470,Quito,Melbourne,35,15:00,06:00,Boeing 777,1670.50
+AV0765,Cuenca,Melbourne,32,08:00,23:00,Airbus A320,1580.20
+AV4674,Cuenca,Melbourne,33,10:00,01:00,Boeing 737,1610.60
+AV5987,Cuenca,Melbourne,34,12:00,03:00,Boeing 787,1640.40
+AV8818,Cuenca,Melbourne,35,14:00,05:00,Airbus A330,1670.20
+AV5239,Cuenca,Melbourne,36,16:00,07:00,Boeing 777,1700.30
