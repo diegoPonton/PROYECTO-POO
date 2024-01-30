@@ -23,10 +23,10 @@
   <children>
     <HBox fx:id="seccionBoton" alignment="CENTER" prefHeight="100.0" prefWidth="254.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
       <children>
-        <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="181.0" text="ENTRAR" />
+        <Button fx:id="botonEntrar" mnemonicParsing="false" prefHeight="42.0" prefWidth="181.0" text="ENTRAR" />
       </children>
     </HBox>
-    <VBox fx:id="seccionTextField" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+    <VBox fx:id="seccionTextField" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
       <children>
         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="254.0" spacing="20.0">
           <children>
@@ -46,6 +46,7 @@
             <Insets bottom="10.0" top="10.0" />
           </VBox.margin>
         </HBox>
+            <Label fx:id="MensajeError" textAlignment="CENTER" />
       </children>
       <GridPane.margin>
         <Insets right="20.0" />

@@ -4,6 +4,7 @@
  */
 package com.mycompany.proyectosegundoparcial;
 
+import Modelo.Principal;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
@@ -22,11 +23,12 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 
 public class HolaController implements Initializable {
-
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         ImageView imagenV = new ImageView();
@@ -39,8 +41,29 @@ public class HolaController implements Initializable {
         }catch (IOException e){
             System.out.println("No se puede acceder a la imagen");
         }
+        botonEntrar.setOnAction(event -> {
+            boolean iniciado = Principal.Iniciar_Sesion(tf.getText(), tf2.getText());
+            if (iniciado){
+                try {
+                    App.setRoot("Bienvenida");
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+            } else {
+                MensajeError.setText("Usuario o contraseña incorrecta");
+            }
+        });
     }
-
+    
+    @FXML
+    private Label MensajeError;
+    
+    @FXML
+    private TextField tf;
+    
+    @FXML
+    private TextField tf2;
+    
     @FXML
     private GridPane principalGrid;
 
@@ -49,5 +72,7 @@ public class HolaController implements Initializable {
 
     @FXML
     private Label inicioSesionTitle;
-
+    
+    @FXML
+    private Button botonEntrar;
 }

@@ -69,20 +69,4 @@ public class Cliente {
                 + ", contrasena='" + contrasena + '\''
                 + '}';
     }
-
-    /**
-     * Metodo que permite obtener los datos del archivo cliente
-     * @param ruta Path donde se encuentran los datos
-     * @return un ArrayList con los objetos usuarios
-     */
-    public static ArrayList<Cliente> clientes(String ruta){
-        ArrayList<Cliente> clientes = new ArrayList<>();
-        ArrayList<String[]> dataUsuario = ManejadorArchivos.LeerValidando(ruta, false);
-        for (String[] dataUser : dataUsuario) {
-            clientes.add(new Cliente(dataUser[0], dataUser[1], dataUser[2], dataUser[3], dataUser[4]));
-        }
-        return clientes;
-    }
-
-    // FALTA LA FUNCION VERIFICAR CLIENTE
 }

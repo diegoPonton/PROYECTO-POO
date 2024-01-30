@@ -1,0 +1,20 @@
+ciudad,pais
+Río de Janeiro,Brasil
+Toronto,Canada
+Cali,Colombia
+México,México
+Lima,Peru
+Guadalajara,México
+Cairo,Egipto
+Venecia,Italia
+Roma,Italia
+Barcelona,España
+Valencia,España
+Istanbul,Turquía
+Buenos Aires,Argentina
+Rosario,Argentina
+Beijing,China
+Paris,Francia
+Miami,USA
+Lagos,Nigeria
+Melbourne,Australia
