@@ -1,0 +1,4 @@
+.textField{
+    -fx-background-color: lightgray; /* Cambia el color de fondo */
+    -fx-text-fill: darkblue; /* Cambia el color del texto */
+}

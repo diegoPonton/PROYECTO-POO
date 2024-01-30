@@ -34,7 +34,7 @@ public class HolaController implements Initializable {
         ImageView imagenV = new ImageView();
 
         principalGrid.add(imagenV,0,1);
-        try(FileInputStream input = new FileInputStream("src\\main\\java\\com\\example\\proyecto_javafx_poo_2p\\imagenes\\plane.png")){
+        try(FileInputStream input = new FileInputStream("src\\main\\resources\\imagenes\\plane.png")){
             System.out.println("Leyo la imagen");
             Image image = new Image(input,  300, 300, false, false);
             imagenV.setImage(image);

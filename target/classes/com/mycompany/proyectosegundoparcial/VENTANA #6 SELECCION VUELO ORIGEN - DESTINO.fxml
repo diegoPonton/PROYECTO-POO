@@ -6,57 +6,76 @@
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="367.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="367.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <content>
-      <VBox alignment="TOP_CENTER" prefHeight="508.0" prefWidth="347.0" spacing="20.0">
+      <VBox alignment="TOP_CENTER" prefHeight="737.0" prefWidth="352.0" spacing="20.0" style="-fx-background-color: #457DC1;">
          <children>
-            <Label alignment="CENTER" contentDisplay="TOP" text="SELECCIONA TU VUELO ORIGEN - DESTINO">
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="57.0" prefWidth="343.0" style="-fx-background-color: #E31B1B;" text="SELECCIONA TU VUELO ORIGEN - DESTINO" textFill="WHITE">
                <VBox.margin>
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
+               <font>
+                  <Font name="Gill Sans MT Condensed" size="25.0" />
+               </font>
             </Label>
-            <HBox prefHeight="51.0" prefWidth="374.0">
+            <HBox prefHeight="51.0" prefWidth="374.0" spacing="20.0">
                <children>
-                  <Label prefHeight="17.0" prefWidth="100.0" text="ORDENAR POR: " HBox.hgrow="NEVER">
+                  <Label prefHeight="30.0" prefWidth="115.0" text="ORDENAR POR: " textFill="WHITE" HBox.hgrow="NEVER">
                      <HBox.margin>
                         <Insets bottom="20.0" left="20.0" top="20.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="24.0" />
+                     </font>
                   </Label>
                   <ComboBox prefWidth="150.0">
                      <HBox.margin>
-                        <Insets left="10.0" top="15.0" />
+                        <Insets left="10.0" top="20.0" />
                      </HBox.margin>
                   </ComboBox>
                </children>
             </HBox>
-            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: black;">
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #3D5FCA;">
                <VBox.margin>
                   <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
                </VBox.margin>
                <children>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Label text="Label" />
+                        <Label text="Label" textFill="WHITE">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="25.0" />
+                           </font></Label>
                      </children>
                   </VBox>
                   <VBox prefHeight="98.0" prefWidth="213.0">
                      <children>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Label text="DURACION: X HORAS" />
+                              <Label text="DURACION: X HORAS" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gill Sans MT Condensed" size="24.0" />
+                                 </font></Label>
                            </children>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" stylesheets="@../../../Estilos/ventana%236/labelsStyles.css">
                            <children>
-                              <Label text="PRECIO" />
+                              <Label text="PRECIO" textFill="#f8f8f8">
+                                 <font>
+                                    <Font name="Gill Sans MT Condensed" size="22.0" />
+                                 </font></Label>
                            </children>
                         </HBox>
                      </children>
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
                      <children>
-                        <Label text="Label" />
+                        <Label text="Label" textFill="WHITE">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="25.0" />
+                           </font></Label>
                      </children>
                   </VBox>
                </children>
