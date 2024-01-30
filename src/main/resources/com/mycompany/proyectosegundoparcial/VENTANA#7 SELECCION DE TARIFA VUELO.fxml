@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="337.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+   <content>
+      <VBox alignment="TOP_CENTER" prefHeight="571.0" prefWidth="317.0">
+         <children>
+            <Label text="SELECCIONA TU TARIFA">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Label>
+            <VBox alignment="TOP_CENTER" prefHeight="488.0" prefWidth="277.0" style="-fx-border-color: GREEN;">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="10.0" right="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="L: MAS FLEXIBILIDAD">
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="149.0" layoutY="34.0" text="Equipaje de mano" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="149.0" layoutY="38.0" text="Millas" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="259.0">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="149.0" layoutY="38.0" text="Equipaje de bodega" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="149.0" layoutY="38.0" text="Elige asiento plus" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="85.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label layoutX="149.0" layoutY="38.0" text="Cambio de vuelo gratis" />
+                     </children>
+                  </Pane>
+                  <Label text="PRECIO">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>
