@@ -3,65 +3,320 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="337.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21">
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="812.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <content>
-      <VBox alignment="TOP_CENTER" prefHeight="571.0" prefWidth="317.0">
+      <VBox alignment="TOP_CENTER" prefHeight="925.0" prefWidth="323.0" style="-fx-background-color: #457DC1;">
          <children>
-            <Label text="SELECCIONA TU TARIFA">
-               <VBox.margin>
-                  <Insets bottom="20.0" top="20.0" />
-               </VBox.margin>
-            </Label>
-            <VBox alignment="TOP_CENTER" prefHeight="488.0" prefWidth="277.0" style="-fx-border-color: GREEN;">
-               <VBox.margin>
-                  <Insets bottom="20.0" left="10.0" right="10.0" />
-               </VBox.margin>
+            <Pane prefHeight="28.0" prefWidth="317.0" style="-fx-background-color: #E31B1B;">
                <children>
-                  <Label text="L: MAS FLEXIBILIDAD">
-                     <VBox.margin>
-                        <Insets bottom="10.0" top="10.0" />
-                     </VBox.margin>
-                  </Label>
-                  <Pane prefHeight="200.0" prefWidth="200.0">
-                     <children>
-                        <ImageView fitHeight="85.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label layoutX="149.0" layoutY="34.0" text="Equipaje de mano" />
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="200.0" prefWidth="200.0">
-                     <children>
-                        <ImageView fitHeight="85.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label layoutX="149.0" layoutY="38.0" text="Millas" />
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="200.0" prefWidth="259.0">
-                     <children>
-                        <ImageView fitHeight="85.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label layoutX="149.0" layoutY="38.0" text="Equipaje de bodega" />
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="200.0" prefWidth="200.0">
-                     <children>
-                        <ImageView fitHeight="85.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label layoutX="149.0" layoutY="38.0" text="Elige asiento plus" />
-                     </children>
-                  </Pane>
-                  <Pane prefHeight="200.0" prefWidth="200.0">
-                     <children>
-                        <ImageView fitHeight="85.0" fitWidth="110.0" pickOnBounds="true" preserveRatio="true" />
-                        <Label layoutX="149.0" layoutY="38.0" text="Cambio de vuelo gratis" />
-                     </children>
-                  </Pane>
-                  <Label text="PRECIO">
-                     <VBox.margin>
-                        <Insets bottom="20.0" top="20.0" />
-                     </VBox.margin>
+                  <Label layoutX="119.0" layoutY="6.0" prefHeight="24.0" prefWidth="80.0" text="TARIFAS" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT" size="20.0" />
+                     </font>
                   </Label>
                </children>
+            </Pane>
+            <VBox prefHeight="138.0" prefWidth="297.0" style="-fx-border-radius: 5; -fx-border-color: white; -fx-border-width: 3; -fx-background-color: #B1B5BF;">
+               <children>
+                  <Pane prefHeight="29.0" prefWidth="291.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="99.0" layoutY="-5.0" prefHeight="34.0" prefWidth="94.0" text="S: VIAJA LIGERO">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox prefHeight="12.0" prefWidth="291.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/backpackIcon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="22.0" prefWidth="146.0" text="1 equipaje de mano">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="45.0" prefWidth="291.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/milesIcon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="21.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label prefHeight="26.0" prefWidth="135.0" text="Acumula 1000 millas">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="23.0" prefWidth="291.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="122.0" layoutY="-1.0" text="#PRECIO">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="252.0" prefWidth="297.0" style="-fx-border-radius: 5; -fx-border-color: white; -fx-border-width: 3; -fx-background-color: #FFB07C;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+               <children>
+                  <Pane prefHeight="29.0" prefWidth="291.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label layoutX="96.0" layoutY="-3.0" prefHeight="34.0" prefWidth="100.0" text="M: MAS CONFORT">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox prefHeight="34.0" prefWidth="291.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/backpackIcon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="I equipaje de mano">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="36.0" prefWidth="291.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/milesIcon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="28.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Acumula 1000 millas">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="59.0" prefWidth="291.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/equipaje.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="28.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Equipaje de bodega">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="58.0" prefWidth="291.0">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/asiento.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="28.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Elige asiento">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="60.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="31.0" prefWidth="291.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="122.0" layoutY="2.0" text="#PRECIO">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox prefHeight="324.0" prefWidth="303.0" style="-fx-border-radius: 5; -fx-border-color: white; -fx-border-width: 3; -fx-background-color: #7CBD54;">
+               <children>
+                  <Pane prefHeight="29.0" prefWidth="291.0" style="-fx-background-color: WHITE;">
+                     <children>
+                        <Label layoutX="89.0" layoutY="-5.0" prefHeight="34.0" prefWidth="120.0" text="L: MAS FLEXIBILIDAD">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox prefHeight="34.0" prefWidth="291.0">
+                     <children>
+                        <ImageView fitHeight="44.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/backpackIcon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="I equipaje de mano">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="40.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="36.0" prefWidth="291.0">
+                     <children>
+                        <ImageView fitHeight="45.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/milesIcon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="28.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Acumula 1000 millas">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="59.0" prefWidth="291.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/equipaje.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="28.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Equipaje de bodega">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="30.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="58.0" prefWidth="291.0">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/asiento.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="28.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Elige asiento">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="60.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="297.0">
+                     <children>
+                        <ImageView fitHeight="47.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../imagenes/horario.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="35.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label text="Cambio de vuelo gratis">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="21.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="25.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Pane prefHeight="31.0" prefWidth="291.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="122.0" layoutY="2.0" text="#PRECIO">
+                           <font>
+                              <Font name="Gill Sans MT Condensed" size="17.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
             </VBox>
          </children>
       </VBox>
