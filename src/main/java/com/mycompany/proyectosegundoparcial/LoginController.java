@@ -27,7 +27,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 
-public class HolaController implements Initializable {
+public class LoginController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
