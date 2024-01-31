@@ -1,16 +1,18 @@
 package Modelo;
 
-public class Vuelo {
+import java.util.Comparator;
+
+public class Vuelo implements Comparable<Vuelo>{
     private String origen;
     private String destingo;
-    private double duracion;
+    private int duracion;
     private String horaSalida;
     private String horaLlegada;
     private String numeroVuelo;
     private String codigoAvion;
     private double precio;
 
-    public Vuelo(String origen, String destingo, double duracion,
+    public Vuelo(String origen, String destingo, int duracion,
                  String horaSalida, String horaLlegada, String numeroVuelo,
                  String codigoAvion, double precio) {
         this.origen = origen;
@@ -22,17 +24,28 @@ public class Vuelo {
         this.codigoAvion = codigoAvion;
         this.precio = precio;
     }
-
+    
+    @Override
+    public int compareTo(Vuelo otro) {
+        return Double.compare(this.precio, otro.precio);
+    }
+    
+    public static Comparator<Vuelo> criterio2Comparator = new Comparator<Vuelo>() {
+        @Override
+        public int compare(Vuelo obj1, Vuelo obj2) {
+            return Integer.compare(obj1.duracion, obj2.duracion);
+        }
+    };
     // GETTERS
     public String getOrigen() {
         return origen;
     }
 
-    public String getDestingo() {
+    public String getDestino() {
         return destingo;
     }
 
-    public double getDuracion() {
+    public int getDuracion() {
         return duracion;
     }
 
@@ -66,7 +79,7 @@ public class Vuelo {
         this.destingo = destingo;
     }
 
-    public void setDuracion(double duracion) {
+    public void setDuracion(int duracion) {
         this.duracion = duracion;
     }
 

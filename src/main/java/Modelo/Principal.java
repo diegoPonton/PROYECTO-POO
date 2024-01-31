@@ -45,7 +45,7 @@ public class Principal {
             String[] linea = s.split(",");
             String origen = linea[0];
             String destino = linea[1];
-            double duracion = Double.parseDouble(linea[2]);
+            int duracion = Integer.parseInt(linea[2]);
             String horaSalida = linea[3];
             String horaLlegada = linea[4];
             String numeroVuelo = linea[5];

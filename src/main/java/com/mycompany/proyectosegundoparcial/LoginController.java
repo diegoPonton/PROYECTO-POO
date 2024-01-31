@@ -97,7 +97,7 @@ public class LoginController implements Initializable {
         App.reserva.setCliente(App.clientes.get(indice));
         App.userLogin = App.clientes.get(indice);
         //Mostrando la ventana
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/fxml/bienvenida" + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/fxml/Bienvenida" + ".fxml"));
         Parent root;
         try {
             root = fxmlLoader.load();
