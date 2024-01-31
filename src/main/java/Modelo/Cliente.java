@@ -10,6 +10,18 @@ public class Cliente {
     private String apellido;
     private String usuario;
     private String contrasena;
+    
+    /**
+     * Contructor de usuario que sirve para poder verificar si la contraseña
+     * es correcta o no
+     * 
+     * @param correo
+     * @param password 
+     */
+    public Cliente(String correo, String password) {
+        this.usuario = usuario;
+        this.contrasena = contrasena;
+    }
 
     public Cliente(String cedula, String nombre, String apellido, String usuario, String contrasena) {
         this.cedula = cedula;
@@ -17,6 +29,19 @@ public class Cliente {
         this.apellido = apellido;
         this.usuario = usuario;
         this.contrasena = contrasena;
+    }
+    /**
+     * Metodo que permite obtener los datos del archivo usuario
+     * @param ruta Path donde se encuentran los datos
+     * @return un ArrayList con los objetos usuarios
+     */
+    public static ArrayList<Cliente> clientes(String ruta){
+        ArrayList<Cliente> usuarios = new ArrayList<>();
+        ArrayList<String[]> dataUsuario = ManejadorArchivos.LeerValidando(ruta, false);
+        for (String[] dataUser : dataUsuario) {
+            usuarios.add(new Cliente(dataUser[0], dataUser[1], dataUser[2], dataUser[3], dataUser[4]));
+        }
+        return usuarios;
     }
 
     public String getCedula() {

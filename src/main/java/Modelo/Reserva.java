@@ -18,6 +18,9 @@ public class Reserva implements Serializable{
     private Tarifa tarifaRegreso;
     private String codigoReserva;
 
+    public Reserva(){
+        
+    }
     public Reserva(Cliente cliente, String ciudadOrigen, String ciudadDestino, String fechaSalida, String fechaRegresa, int numeroPasajeros, int numeroVueloIda, int numeroVueloRegreso, Tarifa tarifaIda, Tarifa tarifaRegreso, String codigoReserva) {
         this.cliente = cliente;
         this.ciudadOrigen = ciudadOrigen;
@@ -91,6 +94,22 @@ public class Reserva implements Serializable{
         double total = (precioIda * multIda)+(precioRegreso * multRegreso);
         Pago pago = new Pago(codigoReserva, total, descuento, formaPago);
         return pago;
+    }
+    /**
+     * Obtiene el usuario
+     * @return 
+     */
+    public Cliente getCliente() {
+        return cliente;
+    }
+    
+    /**
+     * Establece el usuario 
+     * @param usuario 
+     */
+
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
     }
 
     // FALTA LA FUNCION PAGAR RESERVA

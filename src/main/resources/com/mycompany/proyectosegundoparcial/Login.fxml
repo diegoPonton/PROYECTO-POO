@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<GridPane fx:id="principalGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #457DC1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectosegundoparcial.LoginController">
+<GridPane fx:id="principalGrid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #457DC1;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectosegundoparcial.LoginController">
   <columnConstraints>
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="437.0" minWidth="10.0" prefWidth="268.0" />
     <ColumnConstraints hgrow="SOMETIMES" maxWidth="384.0" minWidth="10.0" prefWidth="332.0" />
@@ -25,7 +25,7 @@
   <children>
     <HBox fx:id="seccionBoton" alignment="CENTER" prefHeight="100.0" prefWidth="254.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
       <children>
-        <Button fx:id="botonEntrar" mnemonicParsing="false" prefHeight="42.0" prefWidth="181.0" stylesheets="@../../../Estilos/buttonStyles.css" text="ENTRAR" textFill="#245697">
+        <Button fx:id="btnLogin" mnemonicParsing="false" prefHeight="42.0" prefWidth="181.0" stylesheets="@../../../Estilos/buttonStyles.css" text="ENTRAR" textFill="#245697">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font></Button>
@@ -39,7 +39,7 @@
                      <font>
                         <Font name="Gill Sans MT Condensed" size="36.0" />
                      </font></Label>
-            <TextField fx:id="tf" prefHeight="25.0" prefWidth="114.0" stylesheets="@../../../Estilos/textFieldStyle.css" />
+            <TextField fx:id="txCliente" prefHeight="25.0" prefWidth="114.0" stylesheets="@../../../Estilos/textFieldStyle.css" />
           </children>
           <VBox.margin>
             <Insets bottom="10.0" top="10.0" />
@@ -51,7 +51,7 @@
                      <font>
                         <Font name="Gill Sans MT Condensed" size="36.0" />
                      </font></Label>
-            <TextField fx:id="tf2" prefHeight="25.0" prefWidth="113.0" />
+            <TextField fx:id="txPassw" prefHeight="25.0" prefWidth="113.0" />
           </children>
           <VBox.margin>
             <Insets bottom="10.0" top="10.0" />
@@ -76,5 +76,6 @@
             </Pane>
          </children>
     </HBox>
+      <Label fx:id="lbMessage" GridPane.rowIndex="2" />
   </children>
 </GridPane>

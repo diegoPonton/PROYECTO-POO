@@ -12,6 +12,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import javafx.scene.Node;
 
 /**
  *
@@ -103,6 +104,25 @@ public class ManejadorArchivos {
                 e2.printStackTrace();
             }
         }
+    }
+    /**
+     * Aplicara una estilo y luego de un cierto tiempo se lo quita
+     * @param node
+     * @param clase
+     * @param duration 
+     */
+    public static void animateStyle(Node node, String clase, long duration){
+        Thread hiloStyle = new Thread(() -> {
+            node.getStyleClass().add(clase);
+            try {
+                Thread.sleep(duration);
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+            node.getStyleClass().remove(clase);
+            
+        });
+        hiloStyle.start();
     }
     
     /**
