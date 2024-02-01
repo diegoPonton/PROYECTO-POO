@@ -26,7 +26,7 @@ public class PickUp {
      * @param codigo
      * @param descuento
      */
-    public PickUp(double coordenadaX, double coordenadaY, String pais, String codigo, String descuento) {
+    public PickUp(double coordenadaX, double coordenadaY, String codigo, String pais, String descuento) {
         this.coordenadaX = coordenadaX;
         this.coordenadaY = coordenadaY;
         this.pais = pais;
@@ -44,7 +44,7 @@ public class PickUp {
         ArrayList<PickUp> pickups = new ArrayList<>();
         ArrayList<String[]> datPickup = ManejadorArchivos.LeerValidando(ruta, false);
         for (String[] dataPick : datPickup) {
-            pickups.add(new PickUp(Double.parseDouble(dataPick[0]), Double.parseDouble(dataPick[1])*-1, dataPick[2],
+            pickups.add(new PickUp(Double.parseDouble(dataPick[0]), Double.parseDouble(dataPick[1]), dataPick[2],
                 dataPick[3], dataPick[4]));
         }
         

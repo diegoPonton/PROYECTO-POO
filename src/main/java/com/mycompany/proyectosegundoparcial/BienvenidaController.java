@@ -12,11 +12,6 @@ package com.mycompany.proyectosegundoparcial;
 
 import Modelo.PickUp;
 import Modelo.Reserva;
-import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.GridPane;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -26,13 +21,16 @@ import java.util.ResourceBundle;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextField;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
@@ -105,7 +103,7 @@ public class BienvenidaController implements Initializable{
                     break;
                 }
                 ImageView imv = new ImageView();
-                String path ="src\\main\\resources\\imagenes\\arrow.png";
+                String path ="arrow.png";
                 try {
                     Image image = new Image(new FileInputStream(path),40,40,true, true);
                     imv.setImage(image);
@@ -113,7 +111,7 @@ public class BienvenidaController implements Initializable{
                     ex.printStackTrace();
                 }
                 Random num = new Random();
-                int timepo = num.nextInt(21);
+                int timepo = num.nextInt(10);
                 
                 //Colocando el grafico
                 Platform.runLater(()->{
