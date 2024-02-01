@@ -28,9 +28,7 @@ import javafx.scene.layout.VBox;
  * @author fabri
  */
 public class SeleccionController implements Initializable {
-    
-    private static String salida;
-    private static String llegada;
+
     private ArrayList<Vuelo> vuelos = new ArrayList<>();
     
     @FXML
@@ -38,26 +36,6 @@ public class SeleccionController implements Initializable {
     
     @FXML
     private VBox vboxp;
-    
-    // Setter para el atributo salida
-    public void setSalida(String salida) {
-        this.salida = salida;
-    }
-
-    // Getter para el atributo salida
-    public String getSalida() {
-        return salida;
-    }
-
-    // Setter para el atributo llegada
-    public void setLlegada(String llegada) {
-        this.llegada = llegada;
-    }
-
-    // Getter para el atributo llegada
-    public String getLlegada() {
-        return llegada;
-    }
     
     /**
      * Initializes the controller class.
@@ -68,7 +46,7 @@ public class SeleccionController implements Initializable {
         comboBox.getItems().addAll("Precio", "Duración");
         comboBox.getSelectionModel().select("Precio");
         for (Vuelo v :Principal.Vuelos){
-            if(v.getOrigen().equals(salida) && v.getDestino().equals(llegada)){
+            if(v.getOrigen().equals(Principal.getSalida()) && v.getDestino().equals(Principal.getLlegada())){
                 vuelos.add(v);
             } 
         }

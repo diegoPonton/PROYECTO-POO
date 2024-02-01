@@ -21,12 +21,34 @@ public class Principal {
     public static ArrayList<Promocion> Promociones = new ArrayList<>();
     public static ArrayList<Destino> Destinos = new ArrayList<>();
     public static Cliente cliente;
+    public static String Salida;
+    public static String Llegada;
+    
+    // Setter para el atributo salida
+    public static void setSalida(String salida) {
+        Salida = salida;
+    }
+
+    // Getter para el atributo salida
+    public static String getSalida() {
+        return Salida;
+    }
+
+    // Setter para el atributo llegada
+    public static void setLlegada(String llegada) {
+        Llegada = llegada;
+    }
+
+    // Getter para el atributo llegada
+    public static String getLlegada() {
+        return Llegada;
+    }
     
     /**
     * Método main de la clase principal, donde se leen archivos del proyecto y se llenan en listas estáticas.
     * @param args
     */
-    public static void main(String[] args) {
+    public static void Principal(String[] args) {
         ArrayList<String> cs = ManejadorArchivos.LeerArchivo("clientes.txt");
         ArrayList<String> vs = ManejadorArchivos.LeerArchivo("vuelos.txt");
         ArrayList<String> ts = ManejadorArchivos.LeerArchivo("tarifas.txt");

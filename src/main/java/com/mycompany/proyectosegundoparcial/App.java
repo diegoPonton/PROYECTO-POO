@@ -10,11 +10,11 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import static javafx.application.Application.launch;
 import javafx.application.Platform;
 import javafx.scene.Parent;
 import javafx.scene.image.Image;
+
 
 /**
  * JavaFX App
@@ -24,8 +24,7 @@ public class App extends Application {
     private static Scene scene;
     private static Stage stagePrincipal;
     
-    public static String pathImage = "Imagenes/" ;
-    public static String pathData = "Data/";
+
     public static Reserva reserva = new Reserva();
     
     public static ArrayList<Cliente> clientes = new ArrayList<>();
@@ -37,8 +36,8 @@ public class App extends Application {
         super.init();
         
         //Se cargaran todos los datos
-        clientes = Cliente.clientes(pathData+"clientes.txt");
-        pickups = PickUp.pickup(pathData + "promociones.txt");
+        clientes = Cliente.clientes("clientes.txt");
+        pickups = PickUp.pickup("promociones.txt");
     }
     
     
@@ -47,14 +46,14 @@ public class App extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         stagePrincipal = stage; //Se copia la direccion de memoria
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/fxml/login" + ".fxml"));
-        Parent root = fxmlLoader.load();
-        scene = new Scene(root, 750, 480);
-        
+        try{
+        //FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/fxml/login" + ".fxml"));
+        //Parent root = fxmlLoader.load();
+        scene = new Scene(loadFXML("Login"), 750, 480);
         stage.setScene(scene);
         stage.setMinWidth(375);
         stage.setMinHeight(450);
-        stage.getIcons().add(new Image(new FileInputStream(pathImage+"logo.png")));
+        stage.getIcons().add(new Image(new FileInputStream("arrow.png")));
         
         stage.setOnCloseRequest(e -> {
             close = true;
@@ -62,8 +61,14 @@ public class App extends Application {
         });
         
         stage.show();
+        }catch(IOException e){
+            e.printStackTrace();
+        }
     }
-    
+    public static Parent loadFXML(String fxml) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource(fxml + ".fxml"));
+        return fxmlLoader.load();
+    }
     /**
      * Cuando se requiera cambiar la scene del stage principal
      * 
@@ -80,7 +85,5 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch();
-        
     }
-    
 }

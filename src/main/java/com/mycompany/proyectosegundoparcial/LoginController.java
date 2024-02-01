@@ -43,7 +43,7 @@ public class LoginController implements Initializable {
     private Button btnLogin;
     
     @FXML
-    private TextField txUser;
+    private TextField txCliente;
     
     @FXML
     private TextField txPassw;
@@ -59,7 +59,7 @@ public class LoginController implements Initializable {
         //Se capturara el evento del boton
         btnLogin.addEventHandler(ActionEvent.ACTION, (t) -> {
             
-            String correo = txUser.getText();
+            String correo = txCliente.getText();
             String password = txPassw.getText();
             login(correo, password);
             //App.changeScene(new Scene(new VBox(new Label("Hola"))));
@@ -77,13 +77,13 @@ public class LoginController implements Initializable {
         Cliente user = new Cliente(correo, password);
         int indice = App.clientes.indexOf(user); 
         if(indice == -1){
-            ManejadorArchivos.animateStyle(txUser, "txt-error", 2000);
+            ManejadorArchivos.animateStyle(txCliente, "txt-error", 2000);
             lbMessage.setText("No se pudo encontrar el usuario");
             return;
         }
         if(!App.clientes.get(indice).getContrasena().equals(password)){
             ManejadorArchivos.animateStyle(txPassw, "txt-error", 2000);
-            ManejadorArchivos.animateStyle(txUser, "txt-error", 2000);
+            ManejadorArchivos.animateStyle(txCliente, "txt-error", 2000);
             lbMessage.setText("No se pudo validar sus credenciales");
             return;
         }
@@ -97,13 +97,10 @@ public class LoginController implements Initializable {
         App.reserva.setCliente(App.clientes.get(indice));
         App.userLogin = App.clientes.get(indice);
         //Mostrando la ventana
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/fxml/Bienvenida" + ".fxml"));
-        Parent root;
-        try {
-            root = fxmlLoader.load();
-            App.changeScene(root);
-        } catch (IOException ex) {
-            ex.printStackTrace();
+        try{
+            App.changeScene(App.loadFXML("Bienvenida"));
+        }catch(IOException e){
+            e.printStackTrace();
         }
         makeNewWindow();
         
@@ -127,7 +124,7 @@ public class LoginController implements Initializable {
                     Platform.runLater(()->{
                         LvPedidos.getItems().clear();
                     });
-                    ArrayList<String> lineas = ManejadorArchivos.LeerArchivo(App.pathData + "pagos.txt");
+                    ArrayList<String> lineas = ManejadorArchivos.LeerArchivo("pagos.txt");
                     
                     for (String linea : lineas) {
                         String[] data = linea.split(",");

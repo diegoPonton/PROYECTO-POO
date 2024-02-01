@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #457DC1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #457DC1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectosegundoparcial.ReservarController">
    <children>
       <Pane prefHeight="200.0" prefWidth="600.0" style="-fx-background-color: #E31B1B;">
          <children>
@@ -49,7 +49,7 @@
                         <Font name="Gill Sans MT Condensed" size="25.0" />
                      </font>
                   </Label>
-                  <ComboBox prefWidth="150.0">
+                  <ComboBox fx:id="cborigen" prefWidth="150.0">
                      <HBox.margin>
                         <Insets left="19.0" top="33.0" />
                      </HBox.margin>
@@ -66,7 +66,7 @@
                         <Font name="Gill Sans MT Condensed" size="23.0" />
                      </font>
                   </Label>
-                  <ComboBox prefWidth="150.0">
+                  <ComboBox fx:id="cbdestino" prefWidth="150.0">
                      <HBox.margin>
                         <Insets left="28.0" top="33.0" />
                      </HBox.margin>
@@ -83,7 +83,7 @@
                         <Font name="Gill Sans MT Condensed" size="25.0" />
                      </font>
                   </Label>
-                  <DatePicker prefHeight="25.0" prefWidth="116.0">
+                  <DatePicker fx:id="dpsalida" prefHeight="25.0" prefWidth="116.0">
                      <HBox.margin>
                         <Insets left="30.0" top="33.0" />
                      </HBox.margin>
@@ -100,7 +100,7 @@
                         <Font name="Gill Sans MT Condensed" size="23.0" />
                      </font>
                   </Label>
-                  <DatePicker prefHeight="25.0" prefWidth="119.0">
+                  <DatePicker fx:id="dpregreso" prefHeight="25.0" prefWidth="119.0">
                      <HBox.margin>
                         <Insets left="28.0" top="33.0" />
                      </HBox.margin>
@@ -127,7 +127,7 @@
                               <Font name="Gill Sans MT Condensed" size="25.0" />
                            </font>
                         </Label>
-                        <Spinner>
+                        <Spinner fx:id="spinner">
                            <HBox.margin>
                               <Insets left="10.0" top="17.0" />
                            </HBox.margin>
@@ -138,7 +138,7 @@
             </VBox>
          </children>
       </GridPane>
-      <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="186.0" stylesheets="@../../../Estilos/buttonStyles.css" text="BUSCAR">
+      <Button fx:id="boton" mnemonicParsing="false" prefHeight="50.0" prefWidth="186.0" stylesheets="@../../../Estilos/buttonStyles.css" text="BUSCAR">
          <VBox.margin>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </VBox.margin>
@@ -146,6 +146,7 @@
             <Font name="Gill Sans MT Condensed" size="21.0" />
          </font>
       </Button>
+      <Label fx:id="lblmsj" />
    </children>
    <opaqueInsets>
       <Insets />

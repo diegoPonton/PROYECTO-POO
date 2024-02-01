@@ -102,7 +102,7 @@ public class BienvenidaController implements Initializable{
                     break;
                 }
                 ImageView imv = new ImageView();
-                String path = App.pathImage + "logo.png";
+                String path ="arrow.png";
                 try {
                     Image image = new Image(new FileInputStream(path),40,40,true, true);
                     imv.setImage(image);
