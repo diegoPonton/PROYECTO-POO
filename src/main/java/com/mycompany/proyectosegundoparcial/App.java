@@ -59,7 +59,7 @@ public class App extends Application {
             close = true;
             Platform.exit();
         });
-        
+        Principal.Ejecutar();
         stage.show();
         }catch(IOException e){
             e.printStackTrace();
@@ -85,6 +85,5 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch();
-        Principal.Principal();
     }
 }

@@ -1,13 +1,13 @@
 package Modelo;
 
 public class Promocion {
-    private short coordenadaX;
-    private short coordenadaY;
+    private double coordenadaX;
+    private double coordenadaY;
     private String pais;
     private String codigo;
     private byte descuento;
 
-    public Promocion(short coordenadaX, short coordenadaY, String pais, String codigo, byte descuento) {
+    public Promocion(double coordenadaX, double coordenadaY, String pais, String codigo, byte descuento) {
         this.coordenadaX = coordenadaX;
         this.coordenadaY = coordenadaY;
         this.pais = pais;
@@ -15,11 +15,11 @@ public class Promocion {
         this.descuento = descuento;
     }
 
-    public short getCoordenadaX() {
+    public double getCoordenadaX() {
         return coordenadaX;
     }
 
-    public short getCoordenadaY() {
+    public double getCoordenadaY() {
         return coordenadaY;
     }
 
@@ -35,11 +35,11 @@ public class Promocion {
         return descuento;
     }
 
-    public void setCoordenadaX(short coordenadaX) {
+    public void setCoordenadaX(double coordenadaX) {
         this.coordenadaX = coordenadaX;
     }
 
-    public void setCoordenadaY(short coordenadaY) {
+    public void setCoordenadaY(double coordenadaY) {
         this.coordenadaY = coordenadaY;
     }
 

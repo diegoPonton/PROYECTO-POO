@@ -110,7 +110,8 @@ public class Principal {
     * Método main de la clase principal, donde se leen archivos del proyecto y se llenan en listas estáticas.
     * @param args
     */
-    public static void Principal() {
+    public static void Ejecutar() {
+        System.out.println("TEsting");
         ArrayList<String> cs = ManejadorArchivos.LeerArchivo("clientes.txt");
         ArrayList<String> vs = ManejadorArchivos.LeerArchivo("vuelos.txt");
         ArrayList<String> ts = ManejadorArchivos.LeerArchivo("tarifas.txt");
@@ -127,12 +128,12 @@ public class Principal {
         }
         for (String s :vs){
             String[] linea = s.split(",");
-            String origen = linea[0];
-            String destino = linea[1];
-            int duracion = Integer.parseInt(linea[2]);
-            String horaSalida = linea[3];
-            String horaLlegada = linea[4];
-            String numeroVuelo = linea[5];
+            String origen = linea[1];
+            String destino = linea[2];
+            int duracion = Integer.parseInt(linea[3]);
+            String horaSalida = linea[4];
+            String horaLlegada = linea[5];
+            String numeroVuelo = linea[0];
             String codigoAvion = linea[6];
             double precio = Double.parseDouble(linea[7]);
             Vuelos.add(new Vuelo(origen, destino, duracion, horaSalida, horaLlegada, numeroVuelo, codigoAvion, precio));
@@ -150,8 +151,8 @@ public class Principal {
         }
         for (String s :ps){
             String[] linea = s.split(",");
-            short coordenadaX = Short.parseShort(linea[0]);
-            short coordenadaY = Short.parseShort(linea[1]);
+            double coordenadaX = Double.parseDouble(linea[0]);
+            double coordenadaY = Double.parseDouble(linea[1]);
             String pais = linea[2];
             String codigo = linea[3];
             byte descuento = Byte.parseByte(linea[4]);
@@ -163,6 +164,7 @@ public class Principal {
             String pais = linea[1];
             Destinos.add(new Destino(ciudad, pais));
         }
+        System.out.println("Se ejecuto");
     }
     
     
