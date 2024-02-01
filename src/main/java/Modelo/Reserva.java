@@ -4,6 +4,7 @@ import static Enum.TipoTarifa.*;
 import Enum.FormaPago;
 import ManejoArchivos.ManejadorArchivos;
 import java.io.Serializable;
+import java.util.Random;
 
 public class Reserva implements Serializable{
     private Cliente cliente;
@@ -12,16 +13,17 @@ public class Reserva implements Serializable{
     private String fechaSalida;
     private String fechaRegresa;
     private int numeroPasajeros;
-    private int numeroVueloIda;
-    private int numeroVueloRegreso;
+    private String numeroVueloIda;
+    private String numeroVueloRegreso;
     private Tarifa tarifaIda;
     private Tarifa tarifaRegreso;
     private String codigoReserva;
 
     public Reserva(){
-        
+    
     }
-    public Reserva(Cliente cliente, String ciudadOrigen, String ciudadDestino, String fechaSalida, String fechaRegresa, int numeroPasajeros, int numeroVueloIda, int numeroVueloRegreso, Tarifa tarifaIda, Tarifa tarifaRegreso, String codigoReserva) {
+    
+    public Reserva(Cliente cliente, String ciudadOrigen, String ciudadDestino, String fechaSalida, String fechaRegresa, int numeroPasajeros, String numeroVueloIda, String numeroVueloRegreso, Tarifa tarifaIda, Tarifa tarifaRegreso) {
         this.cliente = cliente;
         this.ciudadOrigen = ciudadOrigen;
         this.ciudadDestino = ciudadDestino;
@@ -32,11 +34,97 @@ public class Reserva implements Serializable{
         this.numeroVueloRegreso = numeroVueloRegreso;
         this.tarifaIda = tarifaIda;
         this.tarifaRegreso = tarifaRegreso;
-        this.codigoReserva = codigoReserva;
+        this.codigoReserva = Reserva.codigoReserva();
     }
     
-    public String getCodigoReserva(){
+    // Setter and getter for 'ciudadOrigen'
+    public String getCiudadOrigen() {
+        return ciudadOrigen;
+    }
+
+    public void setCiudadOrigen(String ciudadOrigen) {
+        this.ciudadOrigen = ciudadOrigen;
+    }
+
+    // Setter and getter for 'ciudadDestino'
+    public String getCiudadDestino() {
+        return ciudadDestino;
+    }
+
+    public void setCiudadDestino(String ciudadDestino) {
+        this.ciudadDestino = ciudadDestino;
+    }
+
+    // Setter and getter for 'fechaSalida'
+    public String getFechaSalida() {
+        return fechaSalida;
+    }
+
+    public void setFechaSalida(String fechaSalida) {
+        this.fechaSalida = fechaSalida;
+    }
+
+    // Setter and getter for 'fechaRegresa'
+    public String getFechaRegresa() {
+        return fechaRegresa;
+    }
+
+    public void setFechaRegresa(String fechaRegresa) {
+        this.fechaRegresa = fechaRegresa;
+    }
+
+    // Setter and getter for 'numeroPasajeros'
+    public int getNumeroPasajeros() {
+        return numeroPasajeros;
+    }
+
+    public void setNumeroPasajeros(int numeroPasajeros) {
+        this.numeroPasajeros = numeroPasajeros;
+    }
+
+    // Setter and getter for 'numeroVueloIda'
+    public String getNumeroVueloIda() {
+        return numeroVueloIda;
+    }
+
+    public void setNumeroVueloIda(String numeroVueloIda) {
+        this.numeroVueloIda = numeroVueloIda;
+    }
+
+    // Setter and getter for 'numeroVueloRegreso'
+    public String getNumeroVueloRegreso() {
+        return numeroVueloRegreso;
+    }
+
+    public void setNumeroVueloRegreso(String numeroVueloRegreso) {
+        this.numeroVueloRegreso = numeroVueloRegreso;
+    }
+
+    // Setter and getter for 'tarifaIda'
+    public Tarifa getTarifaIda() {
+        return tarifaIda;
+    }
+
+    public void setTarifaIda(Tarifa tarifaIda) {
+        this.tarifaIda = tarifaIda;
+    }
+
+    // Setter and getter for 'tarifaRegreso'
+    public Tarifa getTarifaRegreso() {
+        return tarifaRegreso;
+    }
+
+    public void setTarifaRegreso(Tarifa tarifaRegreso) {
+        this.tarifaRegreso = tarifaRegreso;
+    }
+
+    // Setter and getter for 'codigoReserva'
+    public String getCodigoReserva() {
         return codigoReserva;
+    }
+
+    public void setCodigoReserva(String codigoReserva) {
+        this.codigoReserva = codigoReserva;
     }
 
     @Override
@@ -56,11 +144,11 @@ public class Reserva implements Serializable{
                 '}';
     }
     
-    public Pago generarTransaccion(byte descuento, FormaPago formaPago){
+    public Pago generarTransaccion(int descuento, FormaPago formaPago){
         double precioIda = 0;
         double precioRegreso = 0;
-        byte multIda = 0;
-        byte multRegreso = 0;
+        int multIda = 0;
+        int multRegreso = 0;
         for(Vuelo v: Principal.Vuelos){
             if(v.getNumeroVuelo().equals(numeroVueloIda)){
                 precioIda = v.getPrecio();
@@ -120,7 +208,19 @@ public class Reserva implements Serializable{
     public void RegistrarReserva(){
         String header = "CodigoReserva,cedulaCliente,ciudadOrigen,ciudadDestino,fechaSalida,fechaRegreso,numPasajeros,numVueloIda,nomVueloRegreso,tipoTaraifaIda,tipoTarifaRegreso";
         String linea = codigoReserva+","+cliente.getCedula()+","+ciudadOrigen+","+ciudadDestino+","+fechaSalida+","+fechaRegresa+","+String.valueOf(numeroPasajeros)+","+String.valueOf(numeroVueloIda)+","+String.valueOf(numeroVueloRegreso)+","+tarifaIda.getTipo()+","+tarifaRegreso.getTipo();
-        ManejadorArchivos.EscribirArchivo("reservas.txt", header, linea);
+        ManejadorArchivos.EscribirArchivo("reservas.txt", linea, header);
     }
     
+    public static String codigoReserva(){
+        Random random = new Random();
+
+        // Generate 6 random capital letters
+        StringBuilder randomString = new StringBuilder();
+        for (int i = 0; i < 6; i++) {
+            // Generate a random capital letter (65-90 in ASCII)
+            char randomChar = (char) (random.nextInt(26) + 'A');
+            randomString.append(randomChar);
+        }
+        return randomString.toString();
+    }
 }

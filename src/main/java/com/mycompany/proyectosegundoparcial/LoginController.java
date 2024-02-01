@@ -95,6 +95,7 @@ public class LoginController implements Initializable {
         //Se puede simular la ventana de carga para mas realismo 
         //ya que el efecto sera inmediato
         lbMessage.setText("");
+        Principal.cliente = App.clientes.get(indice);
         
         //Agregando el usuasrio al pedido
         App.reserva.setCliente(App.clientes.get(indice));

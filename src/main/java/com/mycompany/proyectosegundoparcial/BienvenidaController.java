@@ -11,6 +11,7 @@ package com.mycompany.proyectosegundoparcial;
  */
 
 import Modelo.PickUp;
+import Modelo.Principal;
 import Modelo.Reserva;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -54,7 +55,7 @@ public class BienvenidaController implements Initializable{
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        cliente.setText("Cliente");
+        cliente.setText(Principal.cliente.getNombre());
 
         //Colocando eventos a los botones
         btnPromociones.addEventHandler(ActionEvent.ACTION, new EventHandler<ActionEvent>() {

@@ -7,12 +7,12 @@ public class Pago {
     private int idPago;
     private String codigoReserva;
     private double totalReserva;
-    private byte descuento;
+    private int descuento;
     private FormaPago formaPago;
     private double totalPagar;
     private static int counter = 1;
 
-    public Pago(String codigoReserva, double totalReserva, byte descuento, FormaPago formaPago) {
+    public Pago(String codigoReserva, double totalReserva, int descuento, FormaPago formaPago) {
         this.idPago = counter++;
         this.codigoReserva = codigoReserva;
         this.totalReserva = totalReserva;
@@ -33,7 +33,7 @@ public class Pago {
         return totalReserva;
     }
 
-    public byte getDescuento() {
+    public int getDescuento() {
         return descuento;
     }
 
@@ -57,7 +57,7 @@ public class Pago {
         this.totalReserva = totalReserva;
     }
 
-    public void setDescuento(byte descuento) {
+    public void setDescuento(int descuento) {
         this.descuento = descuento;
     }
 
@@ -75,6 +75,6 @@ public class Pago {
     public void RegistrarPago(){
         String header = "idPago,codigoReserva,totalReserva,descuento,formaPago,totalPagar";
         String linea = String.valueOf(idPago)+","+codigoReserva+","+String.valueOf(totalReserva)+","+String.valueOf(descuento)+","+formaPago.toString()+","+String.valueOf(totalPagar);
-        ManejadorArchivos.EscribirArchivo("pagos.txt", header, linea);
+        ManejadorArchivos.EscribirArchivo("pagos.txt", linea, header);
     }
 }

@@ -9,5 +9,6 @@ package Enum;
  * @author danie
  */
 public enum FormaPago {
-    
+    E,
+    TC
 }

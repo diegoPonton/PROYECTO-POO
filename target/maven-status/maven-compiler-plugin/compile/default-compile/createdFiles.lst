@@ -1,3 +1,4 @@
+com\mycompany\proyectosegundoparcial\PagoController$3.class
 Enum\FormaPago.class
 Modelo\Vuelo$1.class
 Modelo\Reserva.class
@@ -14,6 +15,7 @@ Modelo\Destino.class
 com\mycompany\proyectosegundoparcial\BienvenidaController$1.class
 com\mycompany\proyectosegundoparcial\Info_reservaController$1.class
 com\mycompany\proyectosegundoparcial\LoginController.class
+com\mycompany\proyectosegundoparcial\PagoController$5.class
 ManejoArchivos\VentanasPopUp.class
 com\mycompany\proyectosegundoparcial\SelectTarifasController.class
 Modelo\Reserva$1.class
@@ -23,13 +25,16 @@ Modelo\Cliente.class
 module-info.class
 com\mycompany\proyectosegundoparcial\Datos_PersonalesController.class
 Modelo\Principal.class
+com\mycompany\proyectosegundoparcial\PagoController$2.class
 com\mycompany\proyectosegundoparcial\MapController.class
 com\mycompany\proyectosegundoparcial\SelectTarifasController$3.class
 com\mycompany\proyectosegundoparcial\BienvenidaController.class
 Modelo\Pago.class
 Enum\TipoTarifa.class
 com\mycompany\proyectosegundoparcial\SeleccionController.class
+com\mycompany\proyectosegundoparcial\PagoController$4.class
 com\mycompany\proyectosegundoparcial\ReservarController.class
 Modelo\PickUp.class
+com\mycompany\proyectosegundoparcial\PagoController$1.class
 com\mycompany\proyectosegundoparcial\PagoController.class
 Modelo\Vuelo.class

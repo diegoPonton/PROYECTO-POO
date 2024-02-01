@@ -33,6 +33,7 @@ public class Principal {
     private static Tarifa tarifa2;
     private static double precio1;
     private static double precio2;
+    private static String pais;
     
     
     // Setter para el atributo salida
@@ -143,6 +144,14 @@ public class Principal {
         return precio2;
     }
     
+    public static void setPais(String p){
+        pais = p;
+    }
+    
+    public static String getPais(){
+        return pais;
+    }
+    
     /**
     * Método main de la clase principal, donde se leen archivos del proyecto y se llenan en listas estáticas.
     * @param args
@@ -209,34 +218,12 @@ public class Principal {
     * Método para crear un archivo binario para las reservas creadas.
     * @param reserva que se va a serializar.
     */
-    public void szrReserva(Reserva reserva){
+    public static void szrReserva(Reserva reserva){
         try (ObjectOutputStream stream = new ObjectOutputStream(new FileOutputStream(reserva.getCodigoReserva()+".bin"))) {
           stream.writeObject(reserva);
         } catch (IOException e) {
           e.printStackTrace();
           System.out.println("Error en el proceso de serialización: " + e.getMessage());
         }
-    }
-
-    /**
-    * Método para verificar si los datos ingresados por el usuario son los correctos
-    * @param usuario del cliente
-    * @param contrasena del cliente
-    * @return booleano para saber si el usuario puede proceder a la siguiente vista y asignar el atributo estático cliente.
-    */
-    public static boolean Iniciar_Sesion(String usuario, String contrasena) {
-        boolean verificado = false;
-        for (Cliente c: Clientes){
-            if (c.getUsuario().equals(usuario) && c.getContrasena().equals(contrasena)){
-                System.out.println("Usuario y contrasenia correctos");
-                cliente = c;
-                verificado = true;
-                break;
-            }
-        }
-        if(!verificado){
-            System.out.println("Usuario o contrasenia incorrectos");
-        }
-        return verificado;
     }
 }
