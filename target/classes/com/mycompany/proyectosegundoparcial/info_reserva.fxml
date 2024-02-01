@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="460.0" style="-fx-background-color: #457DC1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="45.0" prefWidth="460.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="121.0" layoutY="14.0" text="RESUMEN DE LA RESERVA" textFill="#d31a1a">
+               <font>
+                  <Font name="Gill Sans MT" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Pane prefHeight="33.0" prefWidth="460.0">
+               <children>
+                  <Label layoutX="14.0" prefHeight="17.0" prefWidth="97.0" text="VUELO DE IDA:">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="103.0" text="#FECHA">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="29.0" prefWidth="460.0">
+               <children>
+                  <Label layoutX="14.0" prefHeight="17.0" prefWidth="79.0" text="#DESTINO">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" prefHeight="113.0" prefWidth="440.0" spacing="50.0" style="-fx-border-color: black; -fx-background-color: #C33212;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="45.0" text="#HORA" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="20.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="108.0" prefWidth="242.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="266.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="87.0" layoutY="19.0" text="#DURACION" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gill Sans MT Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="226.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="98.0" layoutY="19.0" text="#PRECIO" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gill Sans MT Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <Label text="#HORA" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" top="10.0" />
+         </VBox.margin>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Pane prefHeight="33.0" prefWidth="460.0">
+               <children>
+                  <Label layoutX="14.0" prefHeight="17.0" prefWidth="97.0" text="VUELO DE IDA:">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="103.0" text="#FECHA">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="29.0" prefWidth="460.0">
+               <children>
+                  <Label layoutX="14.0" prefHeight="17.0" prefWidth="79.0" text="#DESTINO">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="21.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <HBox alignment="CENTER" prefHeight="113.0" prefWidth="440.0" spacing="50.0" style="-fx-border-color: black; -fx-background-color: #C33212;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="17.0" prefWidth="45.0" text="#HORA" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="20.0" />
+                     </font>
+                  </Label>
+                  <VBox prefHeight="108.0" prefWidth="242.0">
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="266.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="87.0" layoutY="19.0" text="#DURACION" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gill Sans MT Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="226.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="98.0" layoutY="19.0" text="#PRECIO" textFill="WHITE">
+                                 <font>
+                                    <Font name="Gill Sans MT Condensed" size="20.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+                  <Label text="#HORA" textFill="WHITE">
+                     <font>
+                        <Font name="Gill Sans MT Condensed" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
