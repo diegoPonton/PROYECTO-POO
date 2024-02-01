@@ -4,6 +4,7 @@ Modelo\Vuelo$1.class
 Modelo\Reserva.class
 Modelo\Tarifa.class
 com\mycompany\proyectosegundoparcial\SelectTarifasController$2.class
+com\mycompany\proyectosegundoparcial\ConfirmaciónController$1.class
 com\mycompany\proyectosegundoparcial\Info_reservaController.class
 com\mycompany\proyectosegundoparcial\App.class
 com\mycompany\proyectosegundoparcial\BienvenidaController$2.class
@@ -13,6 +14,7 @@ com\mycompany\proyectosegundoparcial\SelectTarifasController$1.class
 Modelo\windowDialog.class
 Modelo\Destino.class
 com\mycompany\proyectosegundoparcial\BienvenidaController$1.class
+com\mycompany\proyectosegundoparcial\ConfirmaciónController.class
 com\mycompany\proyectosegundoparcial\Info_reservaController$1.class
 com\mycompany\proyectosegundoparcial\LoginController.class
 com\mycompany\proyectosegundoparcial\PagoController$5.class

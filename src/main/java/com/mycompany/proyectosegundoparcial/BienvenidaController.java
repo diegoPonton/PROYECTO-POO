@@ -236,6 +236,7 @@ public class BienvenidaController implements Initializable{
     }
     
     public static void changeScene(Parent root){
+        stageReservas.sizeToScene();
         stageReservas.setScene(new Scene(root, 450,800));
     }
 }

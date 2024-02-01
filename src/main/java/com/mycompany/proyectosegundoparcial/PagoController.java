@@ -10,6 +10,8 @@ import Modelo.Pago;
 import Modelo.Principal;
 import Modelo.Promocion;
 import Modelo.Reserva;
+import static com.mycompany.proyectosegundoparcial.BienvenidaController.stageReservas;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.beans.value.ChangeListener;
@@ -18,6 +20,7 @@ import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
@@ -139,10 +142,16 @@ public class PagoController implements Initializable {
             @Override
             public void handle(ActionEvent event) {
                 Reserva reserva = new Reserva(Principal.cliente, Principal.getLlegada(), Principal.getSalida(), Principal.getFechaSalida(), Principal.getFechaRegreso(), Principal.getViajeros(), Principal.getVuelo1().getNumeroVuelo(), Principal.getVuelo2().getNumeroVuelo(), Principal.getTarifa1(), Principal.getTarifa2());
+                ConfirmaciónController.reserva = reserva;
                 reserva.RegistrarReserva();
                 Pago pago = reserva.generarTransaccion(desc, FP);
                 pago.RegistrarPago();
                 Principal.szrReserva(reserva);
+                try{
+                    PagoController.changeScene(App.loadFXML("Seleccion"));
+                }catch(IOException e){
+                    e.printStackTrace();
+                }
             }
         });
     }
@@ -175,6 +184,11 @@ public class PagoController implements Initializable {
         CC.setScene(escena);
         CC.setResizable(false);
         CC.show();
+    }
+    
+    public static void changeScene(Parent root){
+        stageReservas.sizeToScene();
+        stageReservas.setScene(new Scene(root, 450,800));
     }
     
 }

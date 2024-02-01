@@ -285,3 +285,11 @@ AV5987,Cuenca,Melbourne,34,12:00,03:00,Boeing 787,1640.40
 AV8818,Cuenca,Melbourne,35,14:00,05:00,Airbus A330,1670.20
 AV5239,Cuenca,Melbourne,36,16:00,07:00,Boeing 777,1700.30
 AV3255,Toronto,Quito,18,01:00,07:00,Boeing 787,720.90
+AV1005,Río de Janeiro,Cuenca,18,09:30,13:30,Boeing 777,700.80
+AV5652,Río de Janeiro,Guayaquil,20,12:00,16:00,Airbus A350,760.00
+AV9111,Río de Janeiro,Quito,14,01:00,05:00,Airbus A320,550.00
+AV3603,Toronto,Guayaquil,16,03:30,07:30,Boeing 737,610.20
+AV8489,Miami,Guayaquil,19,16:00,20:00,Airbus A330,640.60
+AV5963,Miami,Quito,17,11:00,15:00,Airbus A321,580.75
+AV1118,Miami,Cuenca,18,12:00,16:00,Boeing 737,610.60
+AV3802,Toronto,Cuenca,21,07:30,13:30,Boeing 787,770.40

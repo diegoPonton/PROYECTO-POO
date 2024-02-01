@@ -69,6 +69,7 @@ public class ManejadorArchivos {
      * Este metodo escribe un archivo linea por linea
      * @param nombreArchivo el nombre del archivo a Escribir
      * @param linea La linea que se desea escribir
+     * @param linea1
      */
     public static void EscribirArchivo(String nombreArchivo, String linea, String linea1) {
 

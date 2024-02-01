@@ -87,10 +87,6 @@ public class SelectTarifasController implements Initializable {
         });
     }
     
-    public void Accionar(){
-        
-    }
-    
     private void handleVboxClick(MouseEvent event, Tarifa t, double p){
         try {
             if(Principal.getRepetir()){
