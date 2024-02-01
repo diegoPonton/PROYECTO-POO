@@ -22,11 +22,11 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Button mnemonicParsing="false" prefHeight="56.0" prefWidth="263.0" stylesheets="@../../../Estilos/ventana%232/buttonStyles.css" text="btnPromociones" textFill="WHITE" GridPane.rowIndex="1">
+      <Button fx:id="btnPromociones" mnemonicParsing="false" prefHeight="56.0" prefWidth="263.0" stylesheets="@../../../Estilos/ventana%232/buttonStyles.css" text="btnPromociones" textFill="WHITE" GridPane.rowIndex="1">
          <font>
             <Font name="Gill Sans MT" size="19.0" />
          </font></Button>
-      <Button mnemonicParsing="false" prefHeight="53.0" prefWidth="259.0" stylesheets="@../../../Estilos/ventana%232/buttonStyles.css" text="btnReservar" GridPane.rowIndex="2">
+      <Button fx:id="btnReservar" mnemonicParsing="false" prefHeight="53.0" prefWidth="259.0" stylesheets="@../../../Estilos/ventana%232/buttonStyles.css" text="btnReservar" GridPane.rowIndex="2">
          <font>
             <Font name="Gill Sans MT" size="19.0" />
          </font></Button>
@@ -39,7 +39,7 @@
                         <Font name="Gill Sans MT" size="37.0" />
                      </font>
                   </Label>
-                  <Label layoutX="36.0" layoutY="67.0" text="#USUARIO" textFill="WHITE">
+                  <Label fx:id="cliente" layoutX="36.0" layoutY="67.0" text="#USUARIO" textFill="WHITE">
                      <font>
                         <Font name="Gill Sans MT" size="37.0" />
                      </font>

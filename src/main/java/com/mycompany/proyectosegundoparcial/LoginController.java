@@ -127,7 +127,7 @@ public class LoginController implements Initializable {
                     Platform.runLater(()->{
                         LvPedidos.getItems().clear();
                     });
-                    ArrayList<String> lineas = ManejadorArchivos.LeerArchivo("pagos.txt");
+                    ArrayList<String> lineas = ManejadorArchivos.LeerArchivo("reservas.txt");
                     
                     for (String linea : lineas) {
                         String[] data = linea.split(",");

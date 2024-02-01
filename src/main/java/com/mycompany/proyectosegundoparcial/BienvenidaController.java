@@ -51,9 +51,12 @@ public class BienvenidaController implements Initializable{
 
     @FXML
     private Button btnReservar;
+    @FXML
+    private Label cliente;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        cliente.setText("Cliente");
 
         //Colocando eventos a los botones
         btnPromociones.addEventHandler(ActionEvent.ACTION, new EventHandler<ActionEvent>() {
@@ -61,12 +64,12 @@ public class BienvenidaController implements Initializable{
             public void handle(ActionEvent event) {
                 try {
                     Stage stageMap = new Stage();
-                    Parent rootPedidos = FXMLLoader.load(App.class.getResource("/fxml/map" + ".fxml"));
-                    Scene scene = new Scene(rootPedidos,590,400);
+                    Parent rootReservas = FXMLLoader.load(App.class.getResource("map" + ".fxml"));
+                    Scene scene = new Scene(rootReservas,590,400);
                     stageMap.setScene(scene);
                     stageMap.setResizable(false);
                     
-                    showPickup(rootPedidos, stageMap);
+                    showPickup(rootReservas, stageMap);
                     stageMap.show();
                 } catch (IOException ex) {
                     ex.printStackTrace();
@@ -143,9 +146,9 @@ public class BienvenidaController implements Initializable{
      */
     private void makeWindowPedidos() throws IOException {
         stageReservas = new Stage();
-        Parent rootPedidos = FXMLLoader.load(App.class.getResource("/fxml/baseHelado" + ".fxml"));
+        Parent rootReservas = FXMLLoader.load(App.class.getResource("Reservar" + ".fxml"));
         
-        Scene scene = new Scene(rootPedidos);
+        Scene scene = new Scene(rootReservas);
         stageReservas.setScene(scene);
         stageReservas.initModality(Modality.APPLICATION_MODAL);
         stageReservas.setOnCloseRequest((e)->{

@@ -15,10 +15,10 @@ public class Cliente {
      * Contructor de usuario que sirve para poder verificar si la contraseña
      * es correcta o no
      * 
-     * @param correo
-     * @param password 
+     * @param usuario 
+     * @param contrasena 
      */
-    public Cliente(String correo, String password) {
+    public Cliente(String usuario, String contrasena) {
         this.usuario = usuario;
         this.contrasena = contrasena;
     }
