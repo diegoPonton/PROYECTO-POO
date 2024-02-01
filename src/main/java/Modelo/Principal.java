@@ -21,12 +21,15 @@ public class Principal {
     public static ArrayList<Promocion> Promociones = new ArrayList<>();
     public static ArrayList<Destino> Destinos = new ArrayList<>();
     public static Cliente cliente;
-    public static String Salida;
-    public static String Llegada;
-    
+    private static String Salida;
+    private static String Llegada;
+    private static String FechaSalida;
+    private static String FechaRegreso;
+    private static int Viajeros;
+    private static boolean repetir = true;
     // Setter para el atributo salida
     public static void setSalida(String salida) {
-        Salida = salida;
+        Principal.Salida = salida;
     }
 
     // Getter para el atributo salida
@@ -36,12 +39,52 @@ public class Principal {
 
     // Setter para el atributo llegada
     public static void setLlegada(String llegada) {
-        Llegada = llegada;
+        Principal.Llegada = llegada;
     }
 
     // Getter para el atributo llegada
     public static String getLlegada() {
         return Llegada;
+    }
+    
+        // Setter para FechaSalida
+    public static void setFechaSalida(String fechaSalida) {
+        Principal.FechaSalida = fechaSalida;
+    }
+
+    // Getter para FechaSalida
+    public static String getFechaSalida() {
+        return FechaSalida;
+    }
+
+    // Setter para FechaRegreso
+    public static void setFechaRegreso(String fechaRegreso) {
+        Principal.FechaRegreso = fechaRegreso;
+    }
+
+    // Getter para FechaRegreso
+    public static String getFechaRegreso() {
+        return FechaRegreso;
+    }
+
+    // Setter para Viajeros
+    public static void setViajeros(int viajeros) {
+        Principal.Viajeros = viajeros;
+    }
+
+    // Getter para Viajeros
+    public static int getViajeros() {
+        return Viajeros;
+    }
+
+    // Setter para repetir
+    public static void setRepetir(boolean repetir) {
+        Principal.repetir = repetir;
+    }
+
+    // Getter para repetir
+    public static boolean isRepetir() {
+        return repetir;
     }
     
     /**

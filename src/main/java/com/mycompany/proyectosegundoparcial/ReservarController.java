@@ -5,6 +5,8 @@
 package com.mycompany.proyectosegundoparcial;
 
 import Modelo.Destino;
+import Modelo.Principal;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -65,8 +67,19 @@ public class ReservarController implements Initializable {
                 dpregreso.getValue() != null &&
                 spinner.getValue() != null
                 ){
-                
-            } 
+                Principal.setSalida(cborigen.getSelectionModel().getSelectedItem());
+                Principal.setLlegada(cbdestino.getSelectionModel().getSelectedItem());
+                Principal.setFechaSalida(dpsalida.getValue().toString());
+                Principal.setFechaRegreso(dpregreso.getValue().toString());
+                Principal.setViajeros(spinner.getValue());
+                try{
+                    App.changeScene(App.loadFXML("Seleccion"));
+                }catch(IOException e){
+                    e.printStackTrace();
+                }
+            } else {
+                lblmsj.setText("Por favor ingrese todos los datos solicitados.");
+            }
         });
     }    
     
