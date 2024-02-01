@@ -237,10 +237,10 @@ public class BienvenidaController implements Initializable{
     }
     
     public static void changeScene(Parent root){
-        double ancho = stageReservas.getScene().getWidth();
-        double alto = stageReservas.getScene().getHeight();
         
-        stageReservas.setScene(new Scene(root, ancho,alto));
+        
+        stageReservas.setScene(new Scene(root, 320,700));
         
     }
+    
 }

@@ -21,6 +21,8 @@ import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.scene.control.Label;
+import javafx.scene.text.Font;
 
 /**
  * FXML Controller class
@@ -77,6 +79,26 @@ public class SeleccionController implements Initializable {
             Label Llegada = new Label(v.getHoraLlegada());
             Label Duracion = new Label("Duración: "+ String.valueOf(v.getDuracion())+" horas");
             Label Precio = new Label(String.valueOf(v.getPrecio()));
+            
+          
+             String estiloLabel = "-fx-font-family: 'Serif'; -fx-font-size: 14; -fx-spacing: 10; -fx-margin: 10; -fx-padding: 10;";
+             Salida.setStyle(estiloLabel);
+             Llegada.setStyle(estiloLabel);
+             Duracion.setStyle(estiloLabel);
+             Precio.setStyle(estiloLabel);
+             Precio.setStyle(estiloLabel + "-fx-margin: 10 0 0 50;" + "-fx-padding: 10 50 0 50; -fx-border-width: 5 0 0 0; -fx-border-color: black;");
+
+             String estiloSalida = estiloLabel + "-fx-margin: 50 0 0 0; fx-padding: 20 0 0 0;";
+             Salida.setStyle(estiloSalida);
+
+             // Estilo específico para el Label de llegada
+             String estiloLlegada = estiloLabel + "-fx-margin: 50 0 0 0; fx-padding: 20 0 0 0;";
+             Llegada.setStyle(estiloLlegada);
+             
+             String estiloHBox = "-fx-border-width: 1; -fx-border-color: black;  -fx-padding: 0 0 0 0; -fx-background-color: white;";
+             Hbox.setStyle(estiloHBox);
+            
+            
             Hbox1.getChildren().add(Duracion);
             Hbox2.getChildren().add(Precio);
             Vbox1.getChildren().add(Salida);
