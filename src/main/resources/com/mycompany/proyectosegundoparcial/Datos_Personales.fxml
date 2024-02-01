@@ -9,12 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox fx:id="Vboxpadre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyectosegundoparcial.Datos_PersonalesController">
    <children>
-      <Pane prefHeight="61.0" prefWidth="619.0">
+      <Pane fx:id="titulo" prefHeight="61.0" prefWidth="619.0">
          <children>
-            <Label layoutX="254.0" layoutY="28.0" text="DATOS PERSONALES">
+            <Label layoutX="200.0" layoutY="28.0" text="DATOS PERSONALES">
                <font>
                   <Font name="Gill Sans MT Condensed" size="26.0" />
                </font>
@@ -24,7 +23,7 @@
             <Insets bottom="10.0" />
          </VBox.margin>
       </Pane>
-      <VBox prefHeight="151.0" prefWidth="619.0" style="-fx-border-color: purple;">
+      <VBox fx:id="base" prefHeight="151.0" prefWidth="619.0" style="-fx-border-color: purple;">
          <children>
             <Label prefHeight="19.0" prefWidth="92.0" text="#pasajero">
                <VBox.margin>
@@ -33,7 +32,7 @@
             </Label>
             <HBox prefHeight="100.0" prefWidth="200.0">
                <children>
-                  <VBox prefHeight="118.0" prefWidth="318.0">
+                  <VBox fx:id="test" prefHeight="118.0" prefWidth="318.0">
                      <children>
                         <Pane prefHeight="200.0" prefWidth="200.0">
                            <children>
@@ -75,7 +74,7 @@
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
          </VBox.margin>
       </VBox>
-      <Pane prefHeight="37.0" prefWidth="619.0">
+      <Pane fx:id="pane" prefHeight="37.0" prefWidth="619.0">
          <children>
             <Button layoutX="406.0" layoutY="6.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="169.0" stylesheets="@../POO%20SEGUNDO%20PARCIAL/PROYECTO-POO/src/main/resources/Estilos/buttonStyles.css" text="Continuar" />
          </children>

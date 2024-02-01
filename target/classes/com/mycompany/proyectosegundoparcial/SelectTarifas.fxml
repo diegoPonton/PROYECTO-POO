@@ -76,7 +76,7 @@
                   </HBox>
                   <Pane prefHeight="23.0" prefWidth="291.0" style="-fx-background-color: white;">
                      <children>
-                        <Label layoutX="122.0" layoutY="-1.0" text="#PRECIO">
+                        <Label fx:id="precio1" layoutX="122.0" layoutY="-1.0" text="#PRECIO">
                            <font>
                               <Font name="Gill Sans MT Condensed" size="17.0" />
                            </font>
@@ -184,7 +184,7 @@
                   </HBox>
                   <Pane prefHeight="31.0" prefWidth="291.0" style="-fx-background-color: white;">
                      <children>
-                        <Label layoutX="122.0" layoutY="2.0" text="#PRECIO">
+                        <Label fx:id="precio2" layoutX="122.0" layoutY="2.0" text="#PRECIO">
                            <font>
                               <Font name="Gill Sans MT Condensed" size="17.0" />
                            </font>
@@ -306,7 +306,7 @@
                   </HBox>
                   <Pane prefHeight="31.0" prefWidth="291.0" style="-fx-background-color: white;">
                      <children>
-                        <Label layoutX="122.0" layoutY="2.0" text="#PRECIO">
+                        <Label fx:id="precio3" layoutX="122.0" layoutY="2.0" text="#PRECIO">
                            <font>
                               <Font name="Gill Sans MT Condensed" size="17.0" />
                            </font>

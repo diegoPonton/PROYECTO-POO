@@ -284,3 +284,4 @@ AV4674,Cuenca,Melbourne,33,10:00,01:00,Boeing 737,1610.60
 AV5987,Cuenca,Melbourne,34,12:00,03:00,Boeing 787,1640.40
 AV8818,Cuenca,Melbourne,35,14:00,05:00,Airbus A330,1670.20
 AV5239,Cuenca,Melbourne,36,16:00,07:00,Boeing 777,1700.30
+AV3255,Toronto,Quito,18,01:00,07:00,Boeing 787,720.90

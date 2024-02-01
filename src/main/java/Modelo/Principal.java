@@ -29,6 +29,11 @@ public class Principal {
     private static boolean repetir = true;
     private static Vuelo vuelo1;
     private static Vuelo vuelo2;
+    private static Tarifa tarifa1;
+    private static Tarifa tarifa2;
+    private static double precio1;
+    private static double precio2;
+    
     
     // Setter para el atributo salida
     public static void setSalida(String salida) {
@@ -86,7 +91,7 @@ public class Principal {
     }
 
     // Getter para repetir
-    public static boolean isRepetir() {
+    public static boolean getRepetir() {
         return repetir;
     }
     
@@ -104,6 +109,38 @@ public class Principal {
     
     public static Vuelo getVuelo2(){
         return vuelo2;
+    }
+    
+    public static void setTarifa1(Tarifa tarifa){
+        tarifa1 = tarifa;
+    }
+    
+    public static Tarifa getTarifa1(){
+        return tarifa1;
+    }
+    
+    public static void setTarifa2(Tarifa tarifa){
+        tarifa2 = tarifa;
+    }
+    
+    public static Tarifa getTarifa2(){
+        return tarifa2;
+    }
+    
+    public static void setPrecio1(double p){
+        precio1 = p;
+    }
+    
+    public static double getPrecio1(){
+        return precio1;
+    }
+    
+    public static void setPrecio2(double p){
+        precio2 = p;
+    }
+    
+    public static double getPrecio2(){
+        return precio2;
     }
     
     /**

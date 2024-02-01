@@ -39,6 +39,9 @@ public class SeleccionController implements Initializable {
     @FXML
     private VBox vboxp;
     
+    @FXML
+    private Label origendestino;
+    
     /**
      * Initializes the controller class.
      */
@@ -47,6 +50,7 @@ public class SeleccionController implements Initializable {
         comboBox.getItems().removeAll(comboBox.getItems());
         comboBox.getItems().addAll("Precio", "Duración");
         comboBox.getSelectionModel().select("Precio");
+        origendestino.setText("Selecciona tu vuelo " + Principal.getSalida() + " - " +Principal.getLlegada());
         for (Vuelo v :Principal.Vuelos){
             if(v.getOrigen().equals(Principal.getSalida()) && v.getDestino().equals(Principal.getLlegada())){
                 vuelos.add(v);
@@ -120,7 +124,11 @@ public class SeleccionController implements Initializable {
     
     private void handleHboxClick(MouseEvent event, Vuelo v){
         try {
-            Principal.setVuelo1(v);
+            if(Principal.getRepetir()){
+                Principal.setVuelo1(v);
+            } else{
+                Principal.setVuelo2(v);
+            }            
             BienvenidaController.changeScene(App.loadFXML("SelectTarifas"));
         } catch (IOException ex) {
             ex.printStackTrace();
