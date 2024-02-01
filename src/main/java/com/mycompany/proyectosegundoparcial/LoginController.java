@@ -39,6 +39,7 @@ import javafx.stage.Stage;
 
 public class LoginController implements Initializable {
     
+    
    @FXML
     private Button btnLogin;
     
@@ -70,24 +71,26 @@ public class LoginController implements Initializable {
     
     /**
      * Encargado de poder iniciar sesion
-     * @param correo Correo del Usuario
+     * @param usuario Correo del Usuario
      * @param password Constraseña del usuario
      */
-    private void login(String correo, String password){
-        Cliente user = new Cliente(correo, password);
+    private void login(String usuario, String contrasena){
+        Cliente user = new Cliente(usuario, contrasena);
         int indice = App.clientes.indexOf(user); 
+//        if(App.clientes.get(indice).getContrasena().equals(contrasena)){
+//            lbMessage.setText("holi");
+//        }
         if(indice == -1){
             ManejadorArchivos.animateStyle(txCliente, "txt-error", 2000);
             lbMessage.setText("No se pudo encontrar el usuario");
             return;
         }
-        if(!App.clientes.get(indice).getContrasena().equals(password)){
+        if(!App.clientes.get(indice).getContrasena().equals(contrasena)){
             ManejadorArchivos.animateStyle(txPassw, "txt-error", 2000);
             ManejadorArchivos.animateStyle(txCliente, "txt-error", 2000);
             lbMessage.setText("No se pudo validar sus credenciales");
             return;
         }
-        
         //Esta seccion entrara solo el usuario loguiado
         //Se puede simular la ventana de carga para mas realismo 
         //ya que el efecto sera inmediato
@@ -107,15 +110,15 @@ public class LoginController implements Initializable {
     }
     
     /**
-     * Muesta la ventana de los pedidos
+     * Muesta la ventana de las reservas
      */
     private void makeNewWindow(){
-        Stage stagePedidos = new Stage();
-        stagePedidos.setAlwaysOnTop(true);
+        Stage stageReservas = new Stage();
+        stageReservas.setAlwaysOnTop(true);
         
         ListView<String> LvPedidos = new ListView<>();
         Scene scena = new Scene(LvPedidos,350,250);
-        Thread hiloPedido = new Thread(()->{
+        Thread hiloReserva = new Thread(()->{
             while(true){
                 if(App.close){
                     break;
@@ -143,9 +146,9 @@ public class LoginController implements Initializable {
             }
         });
         
-        hiloPedido.start();
-        stagePedidos.setScene(scena);
-        stagePedidos.setResizable(false);
-        stagePedidos.show();
+        hiloReserva.start();
+        stageReservas.setScene(scena);
+        stageReservas.setResizable(false);
+        stageReservas.show();
     }
 }
