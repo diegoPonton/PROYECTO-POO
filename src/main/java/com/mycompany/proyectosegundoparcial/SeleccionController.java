@@ -105,6 +105,6 @@ public class SeleccionController implements Initializable {
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        //TarifaController.setVuelo1(v);
+        Principal.setVuelo1(v);
     }
 }

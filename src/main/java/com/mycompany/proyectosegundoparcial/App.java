@@ -2,6 +2,7 @@ package com.mycompany.proyectosegundoparcial;
 
 import Modelo.Cliente;
 import Modelo.PickUp;
+import Modelo.Principal;
 import Modelo.Reserva;
 import java.io.FileInputStream;
 import javafx.application.Application;
@@ -54,7 +55,6 @@ public class App extends Application {
         stage.setMinWidth(375);
         stage.setMinHeight(450);
         stage.getIcons().add(new Image(new FileInputStream("arrow.png")));
-        
         stage.setOnCloseRequest(e -> {
             close = true;
             Platform.exit();
@@ -85,5 +85,6 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch();
+        Principal.Principal();
     }
 }

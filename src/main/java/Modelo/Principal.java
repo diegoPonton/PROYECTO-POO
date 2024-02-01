@@ -27,6 +27,9 @@ public class Principal {
     private static String FechaRegreso;
     private static int Viajeros;
     private static boolean repetir = true;
+    private static Vuelo vuelo1;
+    private static Vuelo vuelo2;
+    
     // Setter para el atributo salida
     public static void setSalida(String salida) {
         Principal.Salida = salida;
@@ -87,11 +90,27 @@ public class Principal {
         return repetir;
     }
     
+    public static void setVuelo1(Vuelo vuelo){
+        Principal.vuelo1 = vuelo;
+    }
+    
+    public static Vuelo getVuelo1(){
+        return vuelo1;
+    }
+    
+    public static void setVuelo2(Vuelo vuelo){
+        Principal.vuelo2 = vuelo;
+    }
+    
+    public static Vuelo getVuelo2(){
+        return vuelo2;
+    }
+    
     /**
     * Método main de la clase principal, donde se leen archivos del proyecto y se llenan en listas estáticas.
     * @param args
     */
-    public static void Principal(String[] args) {
+    public static void Principal() {
         ArrayList<String> cs = ManejadorArchivos.LeerArchivo("clientes.txt");
         ArrayList<String> vs = ManejadorArchivos.LeerArchivo("vuelos.txt");
         ArrayList<String> ts = ManejadorArchivos.LeerArchivo("tarifas.txt");

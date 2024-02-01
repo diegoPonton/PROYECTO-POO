@@ -53,10 +53,10 @@ public class ReservarController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         cborigen.getItems().removeAll(cborigen.getItems());
-        cborigen.getItems().addAll("Cuenca, Guayaquil, Quito");
-        ArrayList<Destino> destinos = new ArrayList<>();
+        cborigen.getItems().addAll("Cuenca", "Guayaquil", "Quito");
         cbdestino.getItems().removeAll(cbdestino.getItems());
-        for(Destino d: destinos){
+        for(Destino d: Principal.Destinos){
+            System.out.println(d.getCiudad());
             cbdestino.getItems().add(d.getCiudad());
         }
         spinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1));
