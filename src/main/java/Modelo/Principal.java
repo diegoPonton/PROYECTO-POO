@@ -91,7 +91,7 @@ public class Principal {
     }
     
     public static void setVuelo1(Vuelo vuelo){
-        Principal.vuelo1 = vuelo;
+        vuelo1 = vuelo;
     }
     
     public static Vuelo getVuelo1(){

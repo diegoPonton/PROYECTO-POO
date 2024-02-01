@@ -73,7 +73,7 @@ public class ReservarController implements Initializable {
                 Principal.setFechaRegreso(dpregreso.getValue().toString());
                 Principal.setViajeros(spinner.getValue());
                 try{
-                    App.changeScene(App.loadFXML("Seleccion"));
+                    BienvenidaController.changeScene(App.loadFXML("Seleccion"));
                 }catch(IOException e){
                     e.printStackTrace();
                 }

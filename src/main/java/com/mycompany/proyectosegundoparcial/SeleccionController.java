@@ -97,14 +97,12 @@ public class SeleccionController implements Initializable {
     }
     
     private void handleHboxClick(MouseEvent event, Vuelo v){
-        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("/fxml/SelectTarifa" + ".fxml"));
-        Parent root;
         try {
-            root = fxmlLoader.load();
-            App.changeScene(root);
+            Principal.setVuelo1(v);
+            BienvenidaController.changeScene(App.loadFXML("SelectTarifas"));
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        Principal.setVuelo1(v);
+        
     }
 }
