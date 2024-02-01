@@ -14,21 +14,24 @@ import java.util.ArrayList;
 public class PickUp {
     private double coordenadaX;
     private double coordenadaY;
-    private String nombre;
-    private String horario;
+    private String pais;
+    private String codigo;
+    private String descuento;
 
     /**
      * Contructor de los pickups
      * @param coordenadaX
      * @param coordenadaY
-     * @param nombre
-     * @param horario 
+     * @param pais
+     * @param codigo
+     * @param descuento
      */
-    public PickUp(double coordenadaX, double coordenadaY, String nombre, String horario) {
+    public PickUp(double coordenadaX, double coordenadaY, String pais, String codigo, String descuento) {
         this.coordenadaX = coordenadaX;
         this.coordenadaY = coordenadaY;
-        this.nombre = nombre;
-        this.horario = horario;
+        this.pais = pais;
+        this.codigo = codigo;
+        this.descuento = descuento;
     }
     
     
@@ -42,7 +45,7 @@ public class PickUp {
         ArrayList<String[]> datPickup = ManejadorArchivos.LeerValidando(ruta, false);
         for (String[] dataPick : datPickup) {
             pickups.add(new PickUp(Double.parseDouble(dataPick[0]), Double.parseDouble(dataPick[1])*-1, dataPick[2],
-                dataPick[3]));
+                dataPick[3], dataPick[4]));
         }
         
         return pickups;
@@ -65,19 +68,26 @@ public class PickUp {
     }
 
     /**
-     * Obtiene el nombre 
+     * Obtiene el nombre del país
      * @return 
      */
-    public String getNombre() {
-        return nombre;
+    public String getPais() {
+        return pais;
     }
     /**
-     * Obtiene el horario de atencion
+     * Obtiene el código
      * @return 
      */
 
-    public String getHorario() {
-        return horario;
+    public String getCodigo() {
+        return codigo;
+    }
+    /**
+     * Retorna el descuento
+     * @return 
+     */
+    public String getDescuento(){
+        return descuento;
     }
     
 }

@@ -82,7 +82,7 @@ public class BienvenidaController implements Initializable{
             public void handle(ActionEvent event) {
                 try {
                     App.reserva.setCliente(App.userLogin);
-                    makeWindowPedidos();
+                    makeWindowReservas();
                 } catch (IOException ex) {
                     System.out.println("Ocurrio un error");
                 }
@@ -105,7 +105,7 @@ public class BienvenidaController implements Initializable{
                     break;
                 }
                 ImageView imv = new ImageView();
-                String path ="arrow.png";
+                String path ="src\\main\\resources\\imagenes\\arrow.png";
                 try {
                     Image image = new Image(new FileInputStream(path),40,40,true, true);
                     imv.setImage(image);
@@ -144,7 +144,7 @@ public class BienvenidaController implements Initializable{
      *  Se encarara de crear la ventana donde se podra realizar el pedido
      * @throws IOException 
      */
-    private void makeWindowPedidos() throws IOException {
+    private void makeWindowReservas() throws IOException {
         stageReservas = new Stage();
         Parent rootReservas = FXMLLoader.load(App.class.getResource("Reservar" + ".fxml"));
         
@@ -176,10 +176,11 @@ public class BienvenidaController implements Initializable{
         cont.setMaxHeight(150);
         cont.setSpacing(10);
         cont.setPadding(new Insets(20,10,10,10));
-        Label lbNombre = new Label("Heladeria ... ");
+        Label lbNombre = new Label("Destino");
         lbNombre.setStyle("-fx-font-weight: bold;-fx-font-size: 15; ");
-        Label lbUbi = new Label(pickup.getNombre());
-        Label lbHorario = new Label("Horario: " + pickup.getHorario());
+        Label lbUbi = new Label(pickup.getPais());
+        Label lbCodigo = new Label("Código: " + pickup.getCodigo());
+        Label lbDescuento = new Label("Descuento: "+ pickup.getDescuento());
         
         HBox contHijo = new HBox();
         contHijo.setSpacing(30);
@@ -190,7 +191,7 @@ public class BienvenidaController implements Initializable{
             root.getChildren().remove(cont);
         });
         
-        cont.getChildren().addAll(lbNombre, lbUbi, lbHorario);
+        cont.getChildren().addAll(lbNombre, lbUbi, lbCodigo, lbDescuento);
         contHijo.getChildren().addAll(lbcontador, btnCerrar);
         cont.getChildren().add(contHijo);
         
@@ -198,7 +199,7 @@ public class BienvenidaController implements Initializable{
             for (int i = 5; i > 0; i--) {
                 int contnum = i;
                 Platform.runLater(()->{
-                    lbcontador.setText("Se cerrara en " + contnum  +" segundos");
+                    lbcontador.setText("Se cerrará en " + contnum  +" segundos");
                 });
                 
                 try {
