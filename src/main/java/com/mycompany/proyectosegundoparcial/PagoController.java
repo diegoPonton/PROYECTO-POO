@@ -98,6 +98,7 @@ public class PagoController implements Initializable {
                     pane.getChildren().add(lbl_efectivo);
                     FP = FormaPago.E;
                 } else {
+                    pane.getChildren().removeAll(pane.getChildren());
                     Label notar = new Label("Número de tarjeta:");
                     notar.setLayoutX(10);
                     notar.setLayoutY(10);
@@ -116,6 +117,10 @@ public class PagoController implements Initializable {
                     TextField tfcvv = new TextField();
                     tfcvv.setLayoutX(120);
                     tfcvv.setLayoutY(10);
+                    VBox vbox1 = new VBox(notar, tfnt);
+                    VBox vbox2 = new VBox(fecha, dp);
+                    VBox vbox3 = new VBox(cvv, tfcvv);
+                    pane.getChildren().addAll(vbox1,vbox2, vbox3);
                     FP = FormaPago.TC;
                 }
             }
@@ -148,7 +153,7 @@ public class PagoController implements Initializable {
                 pago.RegistrarPago();
                 Principal.szrReserva(reserva);
                 try{
-                    PagoController.changeScene(App.loadFXML("Seleccion"));
+                    PagoController.changeScene(App.loadFXML("ConfirmaciónController"));
                 }catch(IOException e){
                     e.printStackTrace();
                 }
@@ -188,7 +193,7 @@ public class PagoController implements Initializable {
     
     public static void changeScene(Parent root){
         stageReservas.sizeToScene();
-        stageReservas.setScene(new Scene(root, 450,800));
+        stageReservas.setScene(new Scene(root, 550,800));
     }
     
 }
